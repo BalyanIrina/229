@@ -131,12 +131,48 @@
 		h3 {
 			text-align: left;
 			margin-left: 55%;
-			margin-top: 30%;
+			margin-top: 20%;
 			line-height: 30px;
 			text-align: left;
 			position: absolute;
 
 		}
+		#mySidenav a {
+    position: absolute;
+		margin-top: 25px;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about {
+    top: 20px;
+    background-color: #5988ba;
+}
+
+#blog {
+    top: 80px;
+    background-color: #43678d;
+}
+
+#projects {
+    top: 140px;
+    background-color: #2d455f;
+}
+
+#contact {
+    top: 200px;
+    background-color: #192634
+}
 	</style>
 </head>
 
@@ -157,8 +193,13 @@
 		<a href="Experiments/experiments.html" id="box2">EXPERIMENTS</a>
 </div>
 
-	<div id="boxed3"><a href="#" id="box3">ASSIGNMENTS</a></div>
-
+	<div id="boxed3"><a href="#" id="box3">WEB DESIGN 173</a></div>
+	<div id="mySidenav" class="sidenav">
+	  <a href="#" id="about">ASGMT 1</a>
+	  <a href="#" id="blog">ASGMT 2</a>
+	  <a href="#" id="projects">ASGMT 3</a>
+	  <a href="#" id="contact">ASGMT 4</a>
+	</div>
 </body>
 
 </html>
