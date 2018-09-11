@@ -1,0 +1,117 @@
+@charset "UTF-8";
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#img0 {
+	position: static;
+	margin-left: 750px;
+	margin-right: auto;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.nav ul {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: #2B2B2B;
+}
+.nav li {
+	width: 300px;
+	height: 50px;
+	display: inline-block;
+	font-size: 22px;
+	line-height: 50px;
+	text-align: center;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+}
+.nav a {
+	display: block;
+	text-decoration: none;
+	color: #FBFBFB;
+}
+.nav a:hover {
+	color: #BE2239;
+}
+.column {
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+	width: 33.33%;
+	float: left;
+}
+.row:after  {
+	display: table;
+}
+h2 {
+	font-family: 'Italianno', cursive;
+	;
+	;
+	color: #BE2239;
+	/* [disabled]text-align: left; */
+	font-size: 36px;
+	padding: 0;
+	margin: 0;
+}
+.container  {
+	width: 1800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 10px;
+}
+#img1 {
+	float: left;
+}
+#first {
+	padding-top: 146px;
+	padding-left: auto;
+	padding-right: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	font-size: 24px;
+}
+p {
+	text-align: justify;
+}
+#img2 {
+	margin-left: 50px;
+	margin-right: auto;
+}
+#img5 {
+	margin-left: 50px;
+}
+.footer {
+	margin: 0;
+	float: left;
+	padding-top: 25px;
+	padding-right: auto;
+	padding-left: auto;
+	padding-bottom: 25px;
+	color: #0B0B0B;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	white-space: pre;
+	text-align: center;
+	background-color: #2B2B2B;
+	width: 2200px;
+}
+.footer li {
+	width: 200px;
+	height: 50px;
+	display: inline-table;
+	text-align: center;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+.footer a {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body {
+	padding: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	background-color: #E6CDE1;
+}
+.navigation ul {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-color: #F4FBFF;
+}
+.navigation li {
+	width: 120px;
+	height: 50px;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	;
+	;
+	font-weight: 500;
+	text-align: center;
+	font-size: 22px;
+	line-height: 50px;
+}
+.navigation a {
+	display: block;
+	color: #7D227A;
+	text-decoration: none;
+}
+.navigation a:hover {
+	background-color: #78175C;
+	color: #FFFFFF;
+}
+body img {
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+#wrapper {
+	width: 1200px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: #B581AA;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-color: #B581AA;
+}
+h1 {
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	text-shadow: 4px -1px 3px #3678AF;
+	font-size: 80px;
+}
+p {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: justify;
+	color: #205D96;
+	text-shadow: 3px 5px 25px #FFFCFC;
+	font-family: 'Lato', sans-serif;
+	font-variant: normal;
+	font-size: 20px;
+}
+#image2 {
+	margin-top: 75px;
+}
+.no1, .no2  {
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+a  {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#text p {
+}
+.image3 {
+	float: left;
+	padding-top: 37px;
+	padding-left: 49px;
+	padding-right: 47px;
+	padding-bottom: 4px;
+}
+.column1 {
+	clear: both;
+	padding-top: 50px;
+}
+.sponsors {
+	margin-left: 25px;
+	margin-top: 25px;
+}
+.sponsors2 {
+	margin-right: 500px;
+	margin-top: -53px;
+}
+.sponsors3 {
+	margin-top: 25px;
+	margin-right: 25px;
+}
+.image-contact {
+	float: right;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	margin-right: 25px;
+	margin-left: 80px;
+}
+.father {
+	margin-top: 34px;
+	margin-bottom: -21px;
+	margin-right: 10px;
+	margin-left: 51px;
+	text-align: center;
+	padding-top: 150px;
+}
+.managed {
+	font-size: 30px;
+	text-align: center;
+}
+.number {
+	font-size: 30px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.facebook {
+	text-align: center;
+}
+.managed {
+}
+.number {
+}
+.facebook {
+}
+.sponsors2 {
+}
+.sponsors3 {
+}
