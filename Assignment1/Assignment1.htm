@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Assignment01</title>
+
+  <meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
+  <meta name="keywords" content="media query, layout, assignment">
+  <meta name="author" content="Irina">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #ece0e0;
+      width: 80vw;
+      max-width: 1000px;
+      margin: 0 auto;
+      color: white;
+    }
+
+
+    /* navbar*/
+    .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+    }
+
+    .tablink:hover {
+        background-color: #777;
+    }
+
+
+    .tabcontent {
+        color: white;
+        display: none;
+        padding: 50px;
+        text-align: center;
+    }
+
+    #HOME {background-image: url(purple.jpg);
+    color:#2e1a25;}
+    #PORTFOLIO {background-image: url(kapuyt.jpg);
+    color: #2f313d;}
+    #ABOUT {background-image: url(kanach.jpg);
+    color: #1f2e31;}
+    #CONTACT {background-image: url(dexin.jpg);
+    color:#c28d4b;}
+
+
+/* nav bar end*/
+
+
+
+
+    h1 {
+      font-size: 3em;
+    }
+
+    figure {
+      width: 30vw;
+      float: right;
+
+    }
+figure::after
+{cntent:"";
+clear: both;
+display: table;
+}
+
+
+
+
+    @media screen and (min-width:600px) {
+      body {
+        background: #aeb6b8;
+        color: #ccc;
+      }
+
+      figure{width: 15vw;}
+
+    }
+    article::after, figure::after
+    {cntent:"";
+    clear: both;
+    display: table;
+    }
+
+    @media screen and (min-width:1200px) {
+      body {
+        background: #abb0aa;
+        color: pink;
+      }
+article{float: left; width: 60%; height: 100vh;
+margin-right: 5%;}
+
+
+
+aside{float:left; width: 30%;}
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <div id="HOME" class="tabcontent">
+  <h1>HOME</h1>
+</div>
+
+<div id="PORTFOLIO" class="tabcontent">
+  <h1>PORTFOLIO</h1>
+</div>
+
+<div id="ABOUT" class="tabcontent">
+  <h1>ABOUT</h1>
+</div>
+
+<div id="CONTACT" class="tabcontent">
+  <h1>CONTACT</h1>
+</div>
+
+<button class="tablink" onclick="openCity('HOME', this, '#2e1a25')" id="defaultOpen">HOME</button>
+<button class="tablink" onclick="openCity('PORTFOLIO', this, '#2f313d')">PORTFOLIO</button>
+<button class="tablink" onclick="openCity('ABOUT', this, '#1f2e31')">ABOUT</button>
+<button class="tablink" onclick="openCity('CONTACT', this, '#c28d4b')">CONTACT</button>
+
+  </nav>
+
+  <article>
+    <h1>This is the article heading</h1>
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those <a href="https://chad-bennett.github.io/home/post/lorem-ipsum/" target="_blank">lorem-ipsum generators</a> or you could write your own
+      content. The choice is up to you as the designer. </p>
+  </article>
+
+  <aside>
+    <figure>
+      <img src="pic.jpg" title="image" height="100px" width="100px">
+      <figcaption>Figure caption goes here</figcaption>
+    </figure>
+
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+  </aside>
+
+  <section>
+    <h1>This is the section heading</h1>
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+    <blockquote>
+      This is a blockquote in the middle of the section. You can style this however you want. You can probably also come up with better text than this boring explanation.
+    </blockquote>
+
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+    <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+
+  </section>
+
+  <footer>
+    <hr>
+    <p>
+      © Balyan Enterprises
+    </p>
+  </footer>
+  <script>
+  function openCity(cityName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(cityName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+
+
+</body>
+
+</html>
