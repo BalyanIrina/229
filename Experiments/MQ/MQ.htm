@@ -17,7 +17,7 @@
       color: white;
       margin: 0;
     }
-
+p {color: white;}
     main {
       max-width: 1000px;
       width: 80vw;
@@ -96,35 +96,38 @@
 
     /* nav bar end*/
 #HOME h1{
-  font-size: 50px;
+  font-size: 40px;
   background: -webkit-linear-gradient(#ceb7bf, #2e1a25);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #PORTFOLIO h1{
-  font-size: 50px;
-  background: -webkit-linear-gradient(#ceb7bf, #2e1a25);
+  font-size: 40px;
+  background: -webkit-linear-gradient(#596d78, #323440);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}
 
   #ABOUT h1{
-    font-size: 50px;
-    background: -webkit-linear-gradient(#ceb7bf, #2e1a25);
+    font-size: 40px;
+    background: -webkit-linear-gradient(#7b9e97, #112023);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
 
     #CONTACT h1{
-      font-size: 50px;
-      background: -webkit-linear-gradient(#ceb7bf, #2e1a25);
+      font-size: 40px;
+      background: -webkit-linear-gradient(#d8bb79, #d19c5a);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;}
 
     h1 {
       font-size: 3em;
     }
-
+blockquote {color: #d19c5a;
+  font-size: 50px;
+  text-shadow: 2px 2px white;
+}
     figure {
-      width: 30vw;
+      
       float: right;
 
     }
@@ -135,7 +138,7 @@
       display: table;
     }
 
-
+.col4 {margin-bottom: 50px;}
 
 
     @media screen and (min-width:600px) {
@@ -146,6 +149,7 @@
 
       figure {
         width: 15vw;
+
       }
 
 
@@ -166,6 +170,9 @@
       clear: both;
       display: table;
     }
+    #brush {height: 400px;
+    }
+    .col4 {margin-bottom: 50px;}
 }
     @media screen and (min-width:1200px) {
       body {
@@ -199,6 +206,94 @@
       }
 
     }
+
+
+
+
+    img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.clear {
+  clear: both;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .container:after {
+    content: "";
+    clear: both;
+    width: 100%;
+  }
+
+  .col4 {
+    width: 300px;
+    float: left;
+    margin: 0 10px;
+        margin-bottom: 50px;
+  }
+
+  .image {
+    text-align: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .container {
+    width: 96%;
+    margin: 0 2%;
+  }
+
+  .col4 {
+    clear: both;
+    padding: 20px 0;
+    border-bottom: 1px solid #CCC;
+  }
+  .col4:after {
+    content: "";
+    clear: both;
+    width: 100%;
+  }
+
+  .image {
+    float: left;
+    width: 40%;
+  }
+
+  .copy {
+    float: right;
+    width: 56%;
+  }
+}
+@media (max-width: 599px) {
+  .container {
+    width: 96%;
+    margin: 0 2%;
+  }
+
+  .col4 {
+    padding: 10px 0;
+    border-bottom: 1px solid #CCC;
+  }
+
+  .image, .copy {
+    text-align: center;
+  }
+}
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f7f3f0;
+   color: black;
+   text-align: center;}
+
+footer p { color: black;}
   </style>
 
 </head>
@@ -233,36 +328,76 @@
 
 
     <article>
-      <h1>This is the article heading</h1>
-      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those <a href="https://chad-bennett.github.io/home/post/lorem-ipsum/" target="_blank">lorem-ipsum generators</a> or you could write your own
-        content. The choice is up to you as the designer. </p>
+      <h1 style="color:#323440;">Can't you just take a picture from the internet?</h1>
+      <p>Are you busy this weekend? I have a new project with a tight deadline the website doesn't have the theme i was going for so can you make it look like this clipart i found can you make the font bigger? nor can we barter services? thanks for taking the time to make the website, but i already made it in wix and we are a non-profit organization. Jazz it up a little is this the best we can do can we try some other colours maybe, nor use a kpop logo that's not a kpop logo! ugh, and in an ideal world. Remember, everything is the same or better can we barter services? can we try some other colours maybe make it look like Apple.  </p>
     </article>
 
     <aside>
-      <figure>
-        <img src="pic.jpg" title="image" height="100px" width="100px">
-        <figcaption>Figure caption goes here</figcaption>
+      <figure id= "brush">
+        <img src="brush.jpg" title="image">
+        <figcaption>What is a hamburger menu?</figcaption>
       </figure>
 
-      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+      <p>could you move it a tad to the left. Make it original are you busy this weekend? I have a new project with a tight deadline we have big contacts we will promote you.  </p>
     </aside>
 
     <section>
-      <h1>This is the section heading</h1>
-      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+      <h1 style="color:#112023;">Can you help me out?</h1>
+      <p>Try a more powerful colour something summery; colourful that will be a conversation piece nor can you make it faster? for can we barter services? yet that's going to be a chunk of change can you lower the price for the website? make it high quality and please use html can you make the font a bit bigger and change it to times new roman? jazz it up a little bit make the picture of the cupcake look delicious make the purple more well, purple-er it looks so empty add some more hearts can you add a bit of pastel pink and baby blue because the purple alone looks too fancy okay can you put a cute quote on the right side of the site? oh no it looks messed up! i think we need to start from scratch.  </p>
 
       <blockquote>
-        This is a blockquote in the middle of the section. You can style this however you want. You can probably also come up with better text than this boring explanation.
+        Doing some work for us "pro bono" will really add to your portfolio i promise
       </blockquote>
 
-      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+      <p>use html can you make the font a bit bigger and change it to times new roman? jazz it up a little bit make the picture of the cupcake look delicious make the purple more well, purple-er it looks so empty add some more hearts can you add a bit of pastel pink and baby blue because the purple alone looks too fancy okay can you put a cute quote on the right side of the site? oh no it looks messed up! i think we need to start from scratch I have printed it out, but the animated gif is not moving, or that sandwich needs to be more playful concept is bang on, but can we look at a better execution. I like it, </p>
 
-      <p>Insert some content here. For now, this is just silly random text to fill the space. You could use one of those lorem-ipsum generators or you could write your own content. The choice is up to you as the designer. </p>
+      <p>try to make everything bigger can you make it pop, yet will royalties in the company do instead of cash yet make it look like Apple, or this was not according to brief, yet this looks perfect. Just Photoshop out the dog, add a baby, and make the curtains blue that sandwich needs to be more playful. In an ideal world low resolution? It looks ok on my screen can you pimp this powerpoint, need more geometry patterns can my website be in english? do less with more theres all this spanish text on my site can it handle a million in one go. Can we barter services? what is a hamburger menu I know somebody who can do this for a reasonable cost. </p>
 
     </section>
 
+
+    <div class='container'>
+      <div class='col4'>
+        <div class='image'>
+          <img alt='Tower Bridge' height='213' src='tile.jpg' width='320'>
+        </div>
+        <div class='copy'>
+          <h3>Can you make the blue bluer?</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>
+            <a href='#'>View photo</a>
+          </p>
+        </div>
+        <div class='clear'></div>
+      </div>
+      <div class='col4'>
+        <div class='image'>
+          <img alt='London Eye' height='213' src='sand.jpg' width='320'>
+        </div>
+        <div class='copy'>
+          <h3>low resolution?</h3>
+          <p>That's going to be a chunk of change. Do less with more we are a big name to have in your portfolio, this red is too red try a more powerful colour, make it sexy. .</p>
+          <p>
+            <a href='#'>View photo</a>
+          </p>
+        </div>
+        <div class='clear'></div>
+      </div>
+      <div class='col4'>
+        <div class='image'>
+          <img alt='Big Ben' height='213' src='tiling.jpg' width='320'>
+        </div>
+        <div class='copy'>
+          <h3>are you busy this weekend?</h3>
+          <p>That's going to be a chunk of change. Do less with more we are a big name to have in your portfolio, this red is too red try a more powerful colour, make it sexy. Can you make the blue bluer? low resolution? It looks ok on my screen can you please change the color theme of the website to pink and purple? make the logo a bit smaller because the logo is too big can you link the i</p>
+          <p>
+            <a href='#'>View photo</a>
+          </p>
+        </div>
+        <div class='clear'></div>
+      </div>
+    </div>
     <footer>
-      <hr>
       <p>
         © Balyan Enterprises
       </p>
