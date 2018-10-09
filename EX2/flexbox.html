@@ -441,7 +441,24 @@ label {
 	}
 
 }
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
 
+.show {
+  display: block;
+}
+.products {
+  margin-top: 20px;
+  overflow: hidden;
+}
 </style>
 </head>
 <body>
@@ -520,7 +537,7 @@ label {
       <select>
         <option class="btn" onclick="filterSelection('all')">All</option>
         <option class="btn" onclick="filterSelection('pink')">Pink</option>
-        <option class="btn" onclick="filterSelection('neon')">>Neon</option>
+        <option class="btn" onclick="filterSelection('neon')">Neon</option>
       </select>
     </div>
 
@@ -541,7 +558,9 @@ label {
 <section class="products">
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv pink">
       <img src="p1.jpg">
+    </div>
     </div>
     <div class="product-info">
       <h5>Pink Love</h5>
@@ -551,8 +570,10 @@ label {
 
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv">
       <img src="p2.jpg">
     </div>
+  </div>
     <div class="product-info">
       <h5>Blue Vibes</h5>
       <h6>$109.99</h6>
@@ -561,6 +582,9 @@ label {
 
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv">
+      </div>
+      </div>
       <img src="p3.jpg">
     </div>
     <div class="product-info">
@@ -571,17 +595,20 @@ label {
 
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv pink">
       <img src="p4.jpg">
+    </div>
     </div>
     <div class="product-info">
       <h5>Watermellon</h5>
       <h6>$99.99</h6>
-    </div>
   </div>
 
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv pink">
       <img src="p5.jpg">
+    </div>
     </div>
     <div class="product-info">
       <h5>Pink Vibes</h5>
@@ -591,6 +618,7 @@ label {
 
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv pink">
       <img src="p6.jpg">
     </div>
     <div class="product-info">
@@ -598,11 +626,14 @@ label {
       <h6>$919.99</h6>
     </div>
   </div>
+</div>
 
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv pink">
       <img src="p7.jpg">
     </div>
+  </div>
     <div class="product-info">
       <h5>Pink Mood</h5>
       <h6>$200.99</h6>
@@ -611,7 +642,9 @@ label {
 
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv pink">
       <img src="p8.jpg">
+    </div>
     </div>
     <div class="product-info">
       <h5>Queen</h5>
@@ -621,7 +654,10 @@ label {
 
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv">
       <img src="p9.jpg">
+    </div>
+    </div>
     </div>
     <div class="product-info">
       <h5>Where</h5>
@@ -631,16 +667,21 @@ label {
 
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv pink">
       <img src="p10.jpg">
+    </div>
     </div>
     <div class="product-info">
       <h5>Vibes</h5>
       <h6>$499.99</h6>
     </div>
   </div>
+
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv">
       <img src="p13.jpg">
+    </div>
     </div>
     <div class="product-info">
       <h5>You</h5>
@@ -659,7 +700,9 @@ label {
   </div>
   <div class="product-card">
     <div class="product-image">
+      <div class="filterDiv">
       <img src="p11.jpg">
+    </div>
     </div>
     <div class="product-info">
       <h5>Neon Love</h5>
@@ -695,6 +738,51 @@ output.innerHTML = slider.value;
 
 slider.oninput = function() {
   output.innerHTML = this.value;
+}
+
+// This is what you want to work with//
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
 </script>
 </body>
