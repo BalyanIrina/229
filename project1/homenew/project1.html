@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Home</title>
   <style>
     body,
@@ -53,7 +54,7 @@
     }
 
     .img6 {
-      background-image: url("a3.jpg");
+      background-image: url("a3jpg.jpg");
     }
 
     /* Position text in the middle of the page/image */
@@ -107,7 +108,7 @@
       padding: 0;
       margin: 0;
       list-style: none;
-      background: white;
+      background: #2f2f2f;
       overflow: hidden;
     }
 
@@ -116,8 +117,8 @@
     }
 
     nav a {
-      color: black;
-      font-size: 1em;
+      color: #d6a270;
+      font-size: 1.5em;
       font-family: 'helvetica neue', helvetica, arial, sans-serif;
       text-decoration: none;
       display: block;
@@ -135,11 +136,11 @@
       display: block;
       font-family: 'helvetica neue', helvetica, arial, sans-serif;
       font-weight: 700;
-      background: white;
+
       width: 42px;
       height: 42px;
       line-height: 42px;
-      color: black;
+      color: #d6a270;
       text-align: center;
       font-size: 2em;
       line-height: 1.1em;
@@ -171,6 +172,50 @@
       -o-transform: translate3d(260px, 0, 0);
       transform: translate3d(260px, 0, 0);
     }
+
+      @media screen and (max-width: 600px){
+        .bg-text {
+          font-size: 40px;
+          width: 350px;
+        }
+      }
+      .icon-bar {
+        position: fixed;
+        bottom: 0;
+        right: 5%;
+      }
+
+      .icon-bar a {
+        display: inline;
+        text-align: center;
+        padding:20px;
+
+        transition: all 0.3s ease;
+        color: #d6a270;
+        font-size: 20px;
+      }
+
+      .icon-bar a:hover {
+        background-color: #d6a270;
+        color: white;
+      }
+
+      .facebook {
+        background: #2f2f2f;
+      }
+
+      .twitter {
+        background: #2f2f2f;
+      }
+
+      .linkedin {
+        background: #2f2f2f;
+      }
+
+      .instagram {
+        background: #2f2f2f;
+
+      }
   </style>
 
 
@@ -181,7 +226,7 @@
 
     <input type="checkbox" id="navigation" />
     <label for="navigation">
-          +
+    	&#xf0c9;
       </label>
 
     <nav>
@@ -193,10 +238,10 @@
           <a href="">Portfolio</a>
         </li>
         <li>
-          <a href="">About</a>
+          <a href="project1/about/About.html">About</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="project1/contact/contact.html">Contact</a>
         </li>
       </ul>
     </nav>
@@ -212,7 +257,11 @@
 
   <div class="bg-text">IRINA<b>BALYAN</b></div>
 
-
-
+  <div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+</div>
 
 </html>
