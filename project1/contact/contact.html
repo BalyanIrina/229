@@ -4,115 +4,17 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" type="text/css" href="../style.css">
   <style>
-    body {
-font-family: 'Lato', sans-serif;
-      margin:0;
-    }
 
     * {
       box-sizing: border-box;
     }
-    .wrapper {
-      overflow: hidden;
-    }
-
-    section {
-      padding: 30px 30px 30px 80px;
-      -moz-transition: all 200ms ease-in;
-      -webkit-transition: all 200ms ease-in;
-      -o-transition: all 200ms ease-in;
-      transition: all 200ms ease-in;
-
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 250px;
-      height: 100%;
-      margin: 0 0 0 -250px;
-      -moz-transition: all 200ms ease-in;
-      -webkit-transition: all 200ms ease-in;
-      -o-transition: all 200ms ease-in;
-      transition: all 200ms ease-in;
-    }
-
-    nav ul {
-      width: 250px;
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      background: #2f2f2f;
-      overflow: hidden;
-    }
-
-    nav li {
-      margin: 0;
-    }
-
-    nav a {
-      color: #d6a270;
-      font-size: 1.5em;
-
-      text-decoration: none;
-      display: block;
-      padding: 12px 15px;
-      font-weight: 300;
-      letter-spacing: 2px;
-      border-bottom: 1px solid #333;
-    }
-
-    nav a:hover {
-      background: #111;
-    }
-
-    label {
-      display: block;
-
-      font-weight: 700;
-
-      width: 42px;
-      height: 42px;
-      line-height: 42px;
-      color: #d6a270;
-      text-align: center;
-      font-size: 2em;
-      line-height: 1.1em;
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      -moz-transition: all 200ms ease-in;
-      -webkit-transition: all 200ms ease-in;
-      -o-transition: all 200ms ease-in;
-      transition: all 200ms ease-in;
-      z-index: 500;
-    }
-
-    input[type="checkbox"] {
-      display: none;
-    }
-
-    input[type="checkbox"]:checked~nav {
-      margin: 0;
-    }
-
-    input[type="checkbox"]:checked~label {
-      left: 260px;
-    }
-
-    input[type="checkbox"]:checked~section {
-      -webkit-transform: translate3d(260px, 0, 0);
-      -moz-transform: translate3d(260px, 0, 0);
-      -o-transform: translate3d(260px, 0, 0);
-      transform: translate3d(260px, 0, 0);
-    }
 
     .image-container {
-      background-image: url("poxel1.jpg");
-      opacity: 0.9;
       background-size: cover;
       position: relative;
       height: 150px;
@@ -179,45 +81,11 @@ font-family: 'Lato', sans-serif;
         filter: grayscale(100%);
     }
 
-    .icon-bar {
-      position: fixed;
-      bottom: 0;
-      right: 5%;
-    }
+h4 {
 
-    .icon-bar a {
-      display: inline;
-      text-align: center;
-      padding: 20px;
-      transition: all 0.3s ease;
-      color: white;
-      font-size: 20px;
-    }
+}
 
-    .icon-bar a:hover {
-      background-color: #d6a270;
-    }
-
-    .facebook {
-      background: #3B5998;
-      color: white;
-    }
-
-    .twitter {
-      background: #55ACEE;
-      color: white;
-    }
-
-    .linkedin {
-      background: #007bb5;
-      color: white;
-    }
-
-    .instagram {
-      background: #bb0000;
-      color: white;
-    }
-
+}
     .content {
       margin-left: 75px;
       font-size: 30px;
@@ -260,10 +128,9 @@ font-family: 'Lato', sans-serif;
 
 <body>
   <div class="wrapper">
-
     <input type="checkbox" id="navigation" />
     <label for="navigation">
-          +
+    	<i class="fa fa-bars"></i>
       </label>
 
     <nav>
@@ -275,13 +142,15 @@ font-family: 'Lato', sans-serif;
           <a href="">Portfolio</a>
         </li>
         <li>
-          <a href="">About</a>
+          <a href="project1/about/About.html">About</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="project1/contact/contact.html">Contact</a>
         </li>
       </ul>
     </nav>
+
+  </div>
 
 
   <div class="image-container">
@@ -295,11 +164,11 @@ font-family: 'Lato', sans-serif;
       </div>
       <div class="column">
         <form action="/action_page.php">
-          <label for="fname">Name</label>
+          <h4 id=contact for="fname">Name</h4>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">E-mail</label>
+          <h4 id=contact for="lname">E-mail</h4>
           <input type="text" id="lname" name="lastname" placeholder="Your e-mail..">
-          <label for="subject">Subject</label>
+          <h4 id=contact for="subject">Subject</h4>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
           <input type="submit" value="Submit">
         </form>
