@@ -13,11 +13,13 @@
     * {
       box-sizing: border-box;
     }
-
     .image-container {
+      background-image: url("poxel1.jpg");
       background-size: cover;
       position: relative;
       height: 150px;
+      z-index:auto;
+
     }
 
     .text {
@@ -34,6 +36,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       mix-blend-mode: screen;
+      z-index: 0;
     }
 
     input[type=text],
@@ -81,22 +84,22 @@
         filter: grayscale(100%);
     }
 
-h4 {
 
-}
-
-}
     .content {
       margin-left: 75px;
       font-size: 30px;
     }
+    
     @media screen and (max-width: 600px) {
       .column,
       input[type=submit] {
         width: 100%;
         margin-top: 0;
       }
-
+      .icon-bar {
+        left: 10px;
+        z-index: 4;
+      }
     }
 
     @media screen and (min-width:800px) {
@@ -121,8 +124,10 @@ h4 {
     .container-fluid {
         padding-top: 70px;
         padding-bottom: 70px;
+        padding-left: 40%;
+        padding-right: 40%;
     }
-
+p{font-size: 16px}
   </style>
 </head>
 
@@ -169,7 +174,7 @@ h4 {
           <h4 id=contact for="lname">E-mail</h4>
           <input type="text" id="lname" name="lastname" placeholder="Your e-mail..">
           <h4 id=contact for="subject">Subject</h4>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:185px"></textarea>
           <input type="submit" value="Submit">
         </form>
       </div>
