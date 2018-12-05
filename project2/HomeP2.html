@@ -23,6 +23,7 @@
     color: #1c1c24;
     line-height: 1.8;
   }
+
   * {
     box-sizing: border-box;
   }
@@ -43,6 +44,14 @@
     background-size: 50%, cover;
   }
 
+  img {
+    background-image: url('image1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+
   .bgimg-2 {
     background-image: url("fox.jpg");
     min-height: 400px;
@@ -57,40 +66,8 @@
     cursor: pointer;
   }
 
-  }
 
-  .toplogo {
-    float: right;
-  }
-
-  .brown {
-    background-color: #1c1c24;
-    border-radius: 100px;
-    padding: 20px;
-    width: 150px;
-    height: 150px;
-    float: left;
-  }
-
-  .yellow {
-    background-color: #fed351;
-    border-radius: 100px;
-    padding: 20px;
-    width: 150px;
-    height: 150px;
-    float: left;
-  }
-
-  .yell {
-    background-color: #fee084;
-    border-radius: 100px;
-    padding: 20px;
-    width: 150px;
-    height: 150px;
-    clear: left;
-  }
-
-  .w3-button:hover {
+  .w3-bar .w3-button:hover {
     background: #fed351 !important;
   }
 
@@ -103,8 +80,8 @@
 
   .img-comp-container {
     position: relative;
-    height: 300px;
-    width: 800px;
+    height: 600px;
+    width: 1100px;
     margin: 0 auto;
   }
 
@@ -120,8 +97,15 @@
     vertical-align: middle;
   }
 
+  img {
+    margin-top: -75px;
+    margin-left: auto;
+
+
+  }
+
   .w3-padding-64 {
-    height: 100vh;
+    height: 80vh;
   }
 
   .img-comp-slider {
@@ -140,8 +124,8 @@
     color: #fed351;
     position: absolute;
     z-index: 0;
-    margin-top: -300px;
-    margin-left: 500px;
+    margin-top: -325px;
+    margin-left: 800px;
 
   }
 
@@ -150,14 +134,50 @@
     color: #fed351;
     position: absolute;
     z-index: 8;
-    margin-top: -300px;
+    margin-top: -325px;
     margin-left: 75px;
   }
 
   .w3-black {
-    background: #fee084 !important;
+    background: ##1c1c24 !important;
   }
 
+
+  .view {
+    padding: 10px 115px;
+    background: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+  }
+  .view:after,
+  .view:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #000;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .view:after,
+  .view:before {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  .view:hover:after {
+    -webkit-transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
+  }
+  .view:hover:before {
+    -webkit-transform: translate(-3px, -3px);
+    transform: translate(-3px, -3px);
   }
 
   @media only screen and (max-device-width: 1600px) {
@@ -202,41 +222,8 @@
     .title {
       color: grey;
     }
+}
 
-    .view {
-      padding: 10px 115px;
-      background: none;
-      border: none;
-      position: relative;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 3px;
-      cursor: pointer;
-    }
-    .view:after, .view:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      border: 2px solid #000;
-      transition: -webkit-transform 0.2s;
-      transition: transform 0.2s;
-      transition: transform 0.2s, -webkit-transform 0.2s;
-    }
-    .view:after, .view:before {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-     .view:hover:after {
-      -webkit-transform: translate(3px, 3px);
-              transform: translate(3px, 3px);
-    }
-    .view:hover:before {
-      -webkit-transform: translate(-3px, -3px);
-              transform: translate(-3px, -3px);
-    }
 
 
 
@@ -326,7 +313,25 @@
       transform: translate(-3px, -3px);
     }
 
-    }
+  }
+  footer p {
+    color:#fed351;
+  }
+  strong
+  {color:white;}
+
+.w3-xlarge .w3-section
+{color:#fed351 !important;
+}
+
+.w3-xlarge {
+    font-size: 50px!important;
+  }
+
+  .w3-black, .w3-hover-black:hover .fa{
+    color: #fed351!important;}
+
+
   }
 </style>
 <script>
@@ -444,9 +449,10 @@
       </b>
     </div>
   </div>
-
+<img src='image1.jpg' alt="3" style="width:100%">
 
   <div class="w3-content w3-container w3-padding-64" id="about">
+
     <h3 class="w3-center">ABOUT</h3>
     <div class="w3-row">
 
@@ -465,11 +471,11 @@
     <div class="w3-row-padding w3-center">
       <div class="img-comp-container">
         <div class="img-comp-img">
-          <img src="hate.jpg" width="800" height="500">
+          <img src="hate.jpg" width="1100" height="600">
           <div class="art"><button class="view">Visual Arts</button></div>
         </div>
         <div class="img-comp-img img-comp-overlay">
-          <img src="lovee.jpg" width="800" height="500">
+          <img src="lovee.jpg" width="1100" height="600">
           <h2 class="graphic">Graphic design</h2>
         </div>
       </div>
@@ -502,15 +508,15 @@
     </div>
   </div>
 
-   <footer class="w3-center w3-black w3-padding-64 ">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <footer class="w3-center w3-black w3-padding-64 ">
+    <a href="#home" class="w3-button w3-light-grey">BACK TO TOP</a>
     <div class="w3-xlarge w3-section">
       <i class="fa fa-facebook-official "></i>
       <i class="fa fa-instagram "></i>
       <i class="fa fa-twitter "></i>
       <i class="fa fa-linkedin "></i>
     </div>
-    <p> Designed and Coded by IRINA<b>BALYAN<p>
+    <p> Designed and Coded by <strong>IRINA<b>BALYAN<p></strong>
 </footer>
 
 <script>

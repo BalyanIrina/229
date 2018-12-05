@@ -34,168 +34,213 @@
     }
 
     /* Center website */
+
     .bgimg-1 {
-        background-image: url('hate.jpg');
-        min-height: 50%;
-        background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover
-      }
+      background-image: url('hate.jpg');
+      min-height: 50%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover
+    }
+
     .mainlogo {
       float: right;
       width: 125px;
       margin-top: 5px;
       margin-right: 15px;
     }
-    @media only screen and (max-device-width: 1600px){}
-    #myBtnContainer{
 
+    /*    @media only screen and (max-device-width: 1600px){}*/
+
+    #myBtnContainer {
       margin-left: 28%;
-    }}
-
-
-
-
-    * {
-        box-sizing: border-box;
     }
 
-    body {
+    .w3-bar .w3-button:hover {
+      background: #fed351 !important;
+    }
+
+    .w3-black {
+      background: ##1c1c24 !important;
+    }
+
+    .w3-button:hover {
+      background-color: #fed351  !important;
+    }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
         background-color: whie;
 
-    }
+      }
 
-    /* Center website */
-    .main {
+      /* Center website */
+      .main {
         max-width: 1000px;
         margin: auto;
-    }
+      }
 
-    h1 {
+      h1 {
         font-size: 50px;
         word-break: break-all;
-    }
+      }
 
-    .row {
+      .row {
         margin: 10px -16px;
-    }
+      }
 
-    /* Add padding BETWEEN each column */
-    .row,
-    .row > .column {
+      /* Add padding BETWEEN each column */
+      .row,
+      .row>.column {
         padding: 8px;
-    }
+      }
 
-    /* Create three equal columns that floats next to each other */
-    .column {
+      /* Create three equal columns that floats next to each other */
+      .column {
         float: left;
         width: 33.33%;
-        display: none; /* Hide all elements by default */
+        display: none;
+        /* Hide all elements by default */
         margin-bottom: 16px;
-     padding: 0 8px;
-    }
-    @media screen and (max-width: 650px) {
-      .column {
-        width: 100%;
-        display: block;
+        padding: 0 8px;
       }
-    }
-    /* Clear floats after rows */
-    .row:after {
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+
+        #myBtnContainer {
+          margin-left: 0;
+        }
+
+        .view {
+          max-width: 100%;
+          width: 650px;
+        }
+      }
+      /* Clear floats after rows */
+      .row:after {
         content: "";
         display: table;
         clear: both;
-    }
+      }
 
-    /* Content */
-    .content {
+      /* Content */
+      .content {
         background-color: #f1f1f1;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    h4 {padding: 10px;}
-    p{padding: 10px;}
-    .container {
-      padding: 0 16px;
-    }
+      }
+      h4 {
+        padding: 10px;
+      }
+      p {
+        padding: 10px;
+      }
+      .container {
+        padding: 0 16px;
+      }
 
-    .container::after, .row::after {
-      content: "";
-      clear: both;
-      display: table;
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+
+      /* Style the buttons */
+      .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #fed351;
+      }
+
+      .btn.active {
+        background-color: #fed351;
+        color: white;
+      }
+
+      .view {
+        padding: 5% 40%;
+        background: none;
+        border: none;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        cursor: pointer;
+
+      }
+
+      .view:after,
+      .view:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 2px solid #fed351;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s;
+      }
+
+      .view:after,
+      .view:before {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+      }
+
+      .view:hover:after {
+        -webkit-transform: translate(3px, 3px);
+        transform: translate(3px, 3px);
+      }
+
+      .view:hover:before {
+        -webkit-transform: translate(-3px, -3px);
+        transform: translate(-3px, -3px);
+      }
+
+      footer p {
+        color:#fed351;
+      }
+      strong {color:white;}
+
+      .w3-xlarge .w3-section
+      {color:#fed351 !important;
+
+      }
+
+      .w3-xlarge {
+          font-size: 50px!important;
+        }
+
+        .w3-black, .w3-hover-black:hover .fa{
+          color: #fed351!important;
+        }
+
+
     }
-
-    .title {
-      color: grey;
-    }
-    /* The "show" class is added to the filtered elements */
-    .show {
-      display: block;
-    }
-
-    /* Style the buttons */
-    .btn {
-      border: none;
-      outline: none;
-      padding: 12px 16px;
-      background-color: white;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: #ddd;
-    }
-
-    .btn.active {
-      background-color: #666;
-      color: white;
-    }
-
-    .view {
-      padding: 5% 40%;
-      background: none;
-      border: none;
-      position: relative;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 3px;
-      cursor: pointer;
-
-    }
-
-    .view:after,
-    .view:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      border: 2px solid #fed351;
-      transition: -webkit-transform 0.2s;
-      transition: transform 0.2s;
-      transition: transform 0.2s, -webkit-transform 0.2s;
-    }
-
-    .view:after,
-    .view:before {
-      -webkit-transform: translate(0);
-      transform: translate(0);
-    }
-
-    .view:hover:after {
-      -webkit-transform: translate(3px, 3px);
-      transform: translate(3px, 3px);
-    }
-
-    .view:hover:before {
-      -webkit-transform: translate(-3px, -3px);
-      transform: translate(-3px, -3px);
-    }
-    }
-
-
-
   </style>
 </head>
 
@@ -228,104 +273,104 @@
   </div>
   <div class="main">
 
-  <div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('interface design')">Interface Design</button>
-    <button class="btn" onclick="filterSelection('coding')"> Coding</button>
-    <button class="btn" onclick="filterSelection('brand identity')"> Brand Identity</button>
-  </div>
-
-  <!-- Portfolio Gallery Grid -->
-  <div class="row">
-    <div class="column interface design">
-      <div class="content">
-        <img src="image2.jpeg" alt="1" style="width:100%">
-        <h4>Mountains</h4>
-        <p>Lorem ipsum dolor..</p>
-        <p><button class="view">VIEW</button></p>
-      </div>
-    </div>
-    <div class="column interface design">
-      <div class="content">
-      <img src="image2.jpeg" alt="2" style="width:100%">
-        <h4>Lights</h4>
-        <p>Lorem ipsum dolor..</p>
-        <p><button class="view">VIEW</button></p>
-      </div>
-    </div>
-    <div class="column interface design">
-      <div class="content">
-      <img src="image2.jpeg" alt="3" style="width:100%">
-        <h4>Forest</h4>
-        <p>Lorem ipsum dolor..</p>
-        <p><button class="view">VIEW</button></p>
-      </div>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('interface design')">Interface Design</button>
+      <button class="btn" onclick="filterSelection('coding')"> Coding</button>
+      <button class="btn" onclick="filterSelection('brand identity')"> Brand Identity</button>
     </div>
 
-    <div class="column coding">
-      <div class="content">
-        <img src="image2.jpeg" alt="4" style="width:100%">
-        <h4>Retro</h4>
-        <p>Lorem ipsum dolor..</p>
-        <p><button class="view">VIEW</button></p>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column interface design">
+        <div class="content">
+          <img src="image2.jpeg" alt="1" style="width:100%">
+          <h4>Mountains</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
       </div>
-    </div>
-    <div class="column coding">
-      <div class="content">
-      <img src="image2.jpeg" alt="5" style="width:100%">
-        <h4>Fast</h4>
-        <p>Lorem ipsum dolor..</p>
-        <p><button class="view">VIEW</button></p>
+      <div class="column interface design">
+        <div class="content">
+          <img src="image2.jpeg" alt="2" style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
       </div>
-    </div>
-    <div class="column coding">
-      <div class="content">
-      <img src="image2.jpeg" alt="6" style="width:100%">
-        <h4>Classic</h4>
-        <p>Lorem ipsum dolor..</p>
-        <p><button class="view">VIEW</button></p>
+      <div class="column interface design">
+        <div class="content">
+          <img src="image2.jpeg" alt="3" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
       </div>
+
+      <div class="column coding">
+        <div class="content">
+          <img src="image2.jpeg" alt="4" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <div class="column coding">
+        <div class="content">
+          <img src="image2.jpeg" alt="5" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <div class="column coding">
+        <div class="content">
+          <img src="image2.jpeg" alt="6" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+
+      <div class="column brand identity">
+        <div class="content">
+          <img src="Ambrosia-menu_temp.jpg" alt="7" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <div class="column brand identity">
+        <div class="content">
+          <img src="894.jpg" alt="8" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <div class="column brand identity">
+        <div class="content">
+          <img src="inside-front.jpg" alt="9" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <!-- END GRID -->
     </div>
 
-    <div class="column brand identity">
-      <div class="content">
-        <img src="image2.jpeg" alt="7" style="width:100%">
-        <h4>Girl</h4>
-        <p>Lorem ipsum dolor..</p>
-        <p><button class="view">VIEW</button></p>
-      </div>
-    </div>
-    <div class="column brand identity">
-      <div class="content">
-      <img src="image2.jpeg" alt="8" style="width:100%">
-        <h4>Man</h4>
-        <p>Lorem ipsum dolor..</p>
-        <p><button class="view">VIEW</button></p>
-      </div>
-    </div>
-    <div class="column brand identity">
-      <div class="content">
-      <img src="image2.jpeg" alt="9" style="width:100%">
-        <h4>Woman</h4>
-        <p>Lorem ipsum dolor..</p>
-        <p><button class="view">VIEW</button></p>
-      </div>
-    </div>
-  <!-- END GRID -->
-  </div>
-
-  <!-- END MAIN -->
+    <!-- END MAIN -->
   </div>
   </div>
   <footer class="w3-center w3-black w3-padding-64 ">
-   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-   <div class="w3-xlarge w3-section">
-     <i class="fa fa-facebook-official "></i>
-     <i class="fa fa-instagram "></i>
-     <i class="fa fa-twitter "></i>
-     <i class="fa fa-linkedin "></i>
-   </div>
-   <p> Designed and Coded by IRINA<b>BALYAN<p>
+    <a href="#home" class="w3-button w3-light-grey">BACK TO TOP</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official "></i>
+      <i class="fa fa-instagram "></i>
+      <i class="fa fa-twitter "></i>
+      <i class="fa fa-linkedin "></i>
+    </div>
+    <p> Designed and Coded by <strong>IRINA<b>BALYAN<p></strong>
 </footer>
 <script>
   // Change style of navbar on scroll
