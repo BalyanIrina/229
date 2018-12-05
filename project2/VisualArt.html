@@ -1,135 +1,379 @@
+<!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #111414;
-    line-height: 1.8;
-}
 
+<head>
+  <html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-.bgimg-1 {
-    background-image:url('hate.jpg');
-    min-height: 50%;
-    background-position: center;
-    background-size: cover;
-}
-.w3-hover-opacity {cursor: pointer;}
-.w3-button:hover {background: #fed351 !important;}
-.mainlogo{
-  float: right;
-  width: 125px;
-  margin-top: 5px;
-  margin-right: 15px;
-}
-@media only screen and (max-device-width: 1600px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-        min-height: 400px;
+  <style>
+    * {
+      box-sizing: border-box;
     }
-  
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+      color: #1c1c24;
+      line-height: 1.8;
+    }
+
+    /* Center website */
+
+    .bgimg-1 {
+      background-image: url('hate.jpg');
+      min-height: 50%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover
+    }
+
+    .mainlogo {
+      float: right;
+      width: 125px;
+      margin-top: 5px;
+      margin-right: 15px;
+    }
+
+    /*    @media only screen and (max-device-width: 1600px){}*/
+
+    #myBtnContainer {
+      margin-left: 33%;
+    }
+
+    .w3-bar .w3-button:hover {
+      background: #fed351 !important;
+    }
+
+    .w3-black {
+      background: ##1c1c24 !important;
+    }
+
+    .w3-button:hover {
+      background-color: #fed351  !important;
+    }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: whie;
+
+      }
+
+      /* Center website */
+      .main {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
+
+      .row {
+        margin: 10px -16px;
+      }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row>.column {
+        padding: 8px;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        display: none;
+        /* Hide all elements by default */
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+
+        #myBtnContainer {
+          margin-left: 0;
+        }
+
+        .view {
+          max-width: 100%;
+          width: 650px;
+        }
+      }
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Content */
+      .content {
+        background-color: #f1f1f1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      h4 {
+        padding: 10px;
+      }
+      p {
+        padding: 10px;
+      }
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+
+      /* Style the buttons */
+      .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #fed351;
+      }
+
+      .btn.active {
+        background-color: #fed351;
+        color: white;
+      }
+
+      .view {
+        padding: 5% 40%;
+        background: none;
+        border: none;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+        cursor: pointer;
+
+      }
+
+      .view:after,
+      .view:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 2px solid #fed351;
+        transition: -webkit-transform 0.2s;
+        transition: transform 0.2s;
+        transition: transform 0.2s, -webkit-transform 0.2s;
+      }
+
+      .view:after,
+      .view:before {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+      }
+
+      .view:hover:after {
+        -webkit-transform: translate(3px, 3px);
+        transform: translate(3px, 3px);
+      }
+
+      .view:hover:before {
+        -webkit-transform: translate(-3px, -3px);
+        transform: translate(-3px, -3px);
+      }
+
+      footer p {
+        color:#fed351;
+      }
+      strong {color:white;}
+
+      .w3-xlarge .w3-section
+      {color:#fed351 !important;
+
+      }
+
+      .w3-xlarge {
+          font-size: 50px!important;
+        }
+
+        .w3-black, .w3-hover-black:hover .fa{
+          color: #fed351!important;
+        }
 
 
+    }
+  </style>
+</head>
 
-}
-</style>
 <body>
 
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
-    <img class="mainlogo" src="logorightcolor.png" alt="logo" />
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+      <img class="mainlogo" src="logorightcolor.png" alt="logo" />
+    </div>
+
+
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <img class="mainlogo" src="logo.png" alt="logo" />
+    </div>
   </div>
-
-
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <img class="mainlogo" src="logo.png" alt="logo" />
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large  w3-xlarge w3-wide w3-animate-opacity">VISUAL ART</span>
+    </div>
   </div>
-</div>
-
-
-<div class="bgimg-1 w3-display-container " id="home">
-</div>
-
-
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">VISUAL ARTS</h3>
   <div class="main">
+
     <div id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('interface design')"> Interface design</button>
-      <button class="btn" onclick="filterSelection('coding')"> Coding</button>
-      <button class="btn" onclick="filterSelection('brand identity')"> Brand identity</button>
+      <button class="btn" onclick="filterSelection('batic')">Batic</button>
+      <button class="btn" onclick="filterSelection('painting')"> Painting</button>
+      <button class="btn" onclick="filterSelection('illustration')"> Illustration</button>
     </div>
+
+    <!-- Portfolio Gallery Grid -->
     <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-          <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
+      <div class="column batic">
+        <div class="content">
+          <img src="image2.jpeg" alt="1" style="width:100%">
+          <h4>Mountains</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <div class="column batic">
+        <div class="content">
+          <img src="image2.jpeg" alt="2" style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <div class="column batic">
+        <div class="content">
+          <img src="image2.jpeg" alt="3" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
         </div>
       </div>
 
-      <div class="column">
-        <div class="card">
-          <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
-          <div class="container">
-            <h2>Mike Ross</h2>
-            <p class="title">Art Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
+      <div class="column painting">
+        <div class="content">
+          <img src="image2.jpeg" alt="4" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
         </div>
       </div>
-      <div class="column">
-        <div class="card">
-          <img src="/w3images/team3.jpg" alt="John" style="width:100%">
-          <div class="container">
-            <h2>John Doe</h2>
-            <p class="title">Designer</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
+      <div class="column painting">
+        <div class="content">
+          <img src="image2.jpeg" alt="5" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
         </div>
       </div>
+      <div class="column painting">
+        <div class="content">
+          <img src="image2.jpeg" alt="6" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+
+      <div class="column illustration">
+        <div class="content">
+          <img src="image2.jpeg" alt="7" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <div class="column illustration">
+        <div class="content">
+          <img src="image2.jpeg" alt="8" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <div class="column illustration">
+        <div class="content">
+          <img src="image2.jpeg" alt="9" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+          <p><button class="view">VIEW</button></p>
+        </div>
+      </div>
+      <!-- END GRID -->
     </div>
 
-</div>
+    <!-- END MAIN -->
   </div>
-</div>
-
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-
-
+  </div>
+  <footer class="w3-center w3-black w3-padding-64 ">
+    <a href="#home" class="w3-button w3-light-grey">BACK TO TOP</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official "></i>
+      <i class="fa fa-instagram "></i>
+      <i class="fa fa-twitter "></i>
+      <i class="fa fa-linkedin "></i>
+    </div>
+    <p> Designed and Coded by <strong>IRINA<b>BALYAN<p></strong>
 </footer>
-
 <script>
-
-
-// Change style of navbar on scroll
+  // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -149,7 +393,54 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 </script>
 
+
+
 </body>
+
 </html>
