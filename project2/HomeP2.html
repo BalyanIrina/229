@@ -30,7 +30,7 @@
 
   .bgimg-1,
   .bgimg-2,
-  .bgimg-3 {
+  .bgimg-3{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
   }
 
   .bgimg-2 {
@@ -61,6 +61,26 @@
     min-height: 400px;
   }
 
+.about{
+  background-image: url("image1.jpg");
+  min-height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.w3-xxlarge .w3-text-white .w3-wide {
+
+  margin:0 auto;
+
+
+}
+
+
+}
   .w3-hover-opacity {
     cursor: pointer;
   }
@@ -79,8 +99,8 @@
 
   .img-comp-container {
     position: relative;
-    height: 600px;
-    width: 1100px;
+    height: 500px;
+    width: 950px;
     margin: 0 auto;
   }
 
@@ -119,12 +139,12 @@
   }
 
   .art {
-    font-size: 40px;
+    font-size: 20px;
     color: #fed351;
     position: absolute;
     z-index: 0;
     margin-top: -325px;
-    margin-left: 800px;
+    margin-left: 750px;
 
   }
 
@@ -142,42 +162,6 @@
   }
 
 
-  .view {
-    padding: 10px 115px;
-    background: none;
-    border: none;
-    position: relative;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 3px;
-    cursor: pointer;
-  }
-  .view:after,
-  .view:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border: 2px solid #000;
-    transition: -webkit-transform 0.2s;
-    transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
-  }
-  .view:after,
-  .view:before {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-  .view:hover:after {
-    -webkit-transform: translate(3px, 3px);
-    transform: translate(3px, 3px);
-  }
-  .view:hover:before {
-    -webkit-transform: translate(-3px, -3px);
-    transform: translate(-3px, -3px);
-  }
 
   @media only screen and (max-device-width: 1600px) {
     .bgimg-1,
@@ -316,6 +300,13 @@
   footer p {
     color:#fed351;
   }
+  .fa {
+    margin:0 10px;
+  }
+  .fa:hover{
+    color:white;
+  }
+
   strong
   {color:white;}
 
@@ -448,11 +439,14 @@
       </b>
     </div>
   </div>
-<img src='image1.jpg' alt="3" style="width:100%">
 
-  <div class="w3-content w3-container w3-padding-64" id="about">
+  <div class="about " id="about">
+      <span class="w3-xxlarge w3-text-white w3-wide">ABOUT</span>
+</div>
 
-    <h3 class="w3-center">ABOUT</h3>
+  <div class="w3-content w3-container w3-padding-64">
+
+    <h3 class="w3-center"></h3>
     <div class="w3-row">
 
     </div>
@@ -470,11 +464,11 @@
     <div class="w3-row-padding w3-center">
       <div class="img-comp-container">
         <div class="img-comp-img">
-          <img src="hate.jpg" width="1100" height="600">
+          <img src="hate.jpg" width="950" height="500">
           <div class="art"><button class="view">Visual Arts</button></div>
         </div>
         <div class="img-comp-img img-comp-overlay">
-          <img src="lovee.jpg" width="1100" height="600">
+          <img src="lovee.jpg" width="950" height="500">
           <h2 class="graphic">Graphic design</h2>
         </div>
       </div>
