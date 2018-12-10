@@ -30,7 +30,7 @@
 
   .bgimg-1,
   .bgimg-2,
-  .bgimg-3{
+  .bgimg-3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,26 +61,28 @@
     min-height: 400px;
   }
 
-.about{
-  background-image: url("image1.jpg");
-  min-height: 20%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 70px;
-}
-.w3-xxlarge .w3-text-white .w3-wide {
+  .about {
+    background-image: url("image1.jpg");
+    min-height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
 
-  margin:0 auto;
+  .w3-xxlarge .w3-text-white .w3-wide {
 
-
-}
+    margin: 0 auto;
 
 
-}
+  }
+
+
+  }
+
   .w3-hover-opacity {
     cursor: pointer;
   }
@@ -124,7 +126,7 @@
   }
 
   .w3-padding-64 {
-    height: 80vh;
+  /*  height: 80vh; */
   }
 
   .img-comp-slider {
@@ -159,6 +161,52 @@
 
   .w3-black {
     background: ##1c1c24 !important;
+  }
+  .column {
+    padding: 8px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    /* Hide all elements by default */
+    margin-bottom: 16px;
+    padding: 0 8px;
+
+  }
+
+  h2 {
+    font-size: 92px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    padding: 0 45%;
+
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  ul {
+    line-height: 0.5;
+    padding: 0 75px
+  }
+
+  li {
+    padding: 0 25px;
+  }
+
+  .es {
+    float: left;
+    width: 205%;
+    height: 395px;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 0 12px
   }
 
 
@@ -205,121 +253,170 @@
     .title {
       color: grey;
     }
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+
+  .content {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  h4 {
+    padding: 10px;
+
+  }
+.lang{
+  margin-top: 5px;
 }
+  p {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after,
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+  a {
+    text-decoration: none;
+  }
 
 
-
-
-    @media screen and (min-width:650px) {
-      .column {
-        float: left;
-        width: 33.33%;
-        display: block;
-        margin-bottom: 16px;
-        padding: 0 8px;
-      }
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-
-    .content {
-      background-color: white;
-      padding: 10px;
-    }
-
-
-    .show {
+  @media screen and (min-width:650px) {
+    .column {
+      float: left;
+      width: 33.33%;
       display: block;
+      margin-bottom: 16px;
+      padding: 0 8px;
     }
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 
-    .btn {
-      border: none;
-      outline: none;
-      padding: 12px 16px;
-      background-color: #fed351;
-      cursor: pointer;
-    }
+  .content {
 
-    .btn:hover {
-      background-color: #ddd;
-    }
+    padding: 10px;
+  }
 
-    .btn.active {
-      background-color: #666;
-      color: white;
-    }
-    .view {
-      padding: 5% 40%;
-      background: none;
-      border: none;
-      position: relative;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 3px;
-      cursor: pointer;
 
-    }
+  .show {
+    display: block;
+  }
 
-    .view:after,
-    .view:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      border: 2px solid #fed351;
-      transition: -webkit-transform 0.2s;
-      transition: transform 0.2s;
-      transition: transform 0.2s, -webkit-transform 0.2s;
-    }
 
-    .view:after,
-    .view:before {
-      -webkit-transform: translate(0);
-      transform: translate(0);
-    }
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #fed351;
+    cursor: pointer;
+    text-align: center;
+  }
 
-    .view:hover:after {
-      -webkit-transform: translate(3px, 3px);
-      transform: translate(3px, 3px);
-    }
+  .btn:hover {
+    background-color: #ddd;
+  }
 
-    .view:hover:before {
-      -webkit-transform: translate(-3px, -3px);
-      transform: translate(-3px, -3px);
-    }
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .view {
+    padding: 5% 27%;
+    background: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-top: 17px;
 
   }
+
+  .view:after,
+  .view:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #fed351;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+
+  .view:after,
+  .view:before {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  .view:hover:after {
+    -webkit-transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
+  }
+
+  .view:hover:before {
+    -webkit-transform: translate(-3px, -3px);
+    transform: translate(-3px, -3px);
+  }
+
+  }
+
   footer p {
-    color:#fed351;
+    color: #fed351;
   }
+
   .fa {
-    margin:0 10px;
-  }
-  .fa:hover{
-    color:white;
+    margin: 0 10px;
   }
 
-  strong
-  {color:white;}
-
-.w3-xlarge .w3-section
-{color:#fed351 !important;
-}
-
-.w3-xlarge {
-    font-size: 50px!important;
+  .fa:hover {
+    color: white;
   }
 
-  .w3-black, .w3-hover-black:hover .fa{
-    color: #fed351!important;}
+  strong {
+    color: white;
+  }
+
+  .w3-xlarge .w3-section {
+    color: #fed351 !important;
+  }
+
+  .w3-xlarge {
+    font-size: 50px !important;
+  }
+
+  .w3-black,
+  .w3-hover-black:hover .fa {
+    color: #fed351 !important;
+  }
 
 
   }
@@ -441,15 +538,84 @@
   </div>
 
   <div class="about " id="about">
-      <span class="w3-xxlarge w3-text-white w3-wide">ABOUT</span>
-</div>
+    <span class="w3-xxlarge w3-text-white w3-wide">ABOUT</span>
+  </div>
 
   <div class="w3-content w3-container w3-padding-64">
-
     <h3 class="w3-center"></h3>
     <div class="w3-row">
+      <div class="row">
+      <div class="column me">
+        <img src="me.png" style="width:95%">
+        <div class="btn"> <a href="Resume_Irina_Balyan.pdf" download> DOWNLOAD RESUME </a> </div>
+      </div>
+      <div class="column">
+        <div class="es">
+          <p>Hello, I am Irina and I am a Graphic and Web designer. Art, Design, and Fashion are my passions. I love minimalism but I always have ditail work going on in my art. In my openion Art and design are in ditails. I adore my proffesion and everything
+            that is related to it. Working with the clients is the greatest pleasure for me. No matter what kind of design or art you will order me I will be happy to setisfy your needs fullest with all the creativity and energy I have. </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="w3-row">
+    <div class="column interface design">
+      <div class="content">
+        <h4>SKILLS</h4>
+        <li>Working knowledge of web development HTML and CSS</li>
+        <li>Lo-Fi Prototyping</li>
+        <li>Hi-Fi Prototyping </li>
+        <li> Wireframing</li>
+        <h4 class="lang">LANGUAGES</h4>
+        <li>English</li>
+        <li>Armenian</li>
+        <li>Russian</li>
+
+      </div>
+    </div>
+    <div class="column interface design">
+      <div class="content">
+        <h4>SOFTWARE</h4>
+        <li>Adobe Creative Suite</li>
+        <ul>Photoshop</ul>
+        <ul>Illustrator</ul>
+        <ul>InDesign</ul>
+        <ul>Dreamweaver</ul>
+        <ul>After Effects</ul>
+        <li> Atom</li>
+        <li> Github</li>
+        <li> Invision</ll>
+          <li> Wireframe.cc</ll>
+            <li>3D’s Max</ll>
+
+      </div>
+    </div>
+    <div class="column interface design">
+      <div class="content">
+        <h4>EDUCATION</h4>
+        <b>LANSING COMMUNITY COLLEGE | 2017-Present</b></br>
+          Major: Graphic Communication </br>
+          <b>YEREVAN STATE COLLEGE OF FINE ARTS | 2010-2014 </b></br>
+          Major: Arts Foundations </br>
+          <div class="spacer">
+            &nbsp;
+          </div>
+          <div class="spacer">
+            &nbsp;
+          </div>
+      </div>
+
+
+<button class="view">READ MORE...</button>
+
+</div>
 
     </div>
+  </div>
+
+  <div class="spacer">
+    &nbsp;
   </div>
 
   <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -505,92 +671,96 @@
     <a href="#home" class="w3-button w3-light-grey">BACK TO TOP</a>
     <div class="w3-xlarge w3-section">
       <a href="https://www.facebook.com/irina.balyan.5"><i class="fa fa-facebook-official "></i></a>
-     <a href="https://www.instagram.com/balyan_designs/">  <i class="fa fa-instagram "></i></a>
-    <a href="https://twitter.com/miss_balyan">  <i class="fa fa-twitter "></i></a>
+      <a href="https://www.instagram.com/balyan_designs/">  <i class="fa fa-instagram "></i></a>
+      <a href="https://twitter.com/miss_balyan">  <i class="fa fa-twitter "></i></a>
       <i class="fa fa-linkedin "></i>
     </div>
     <p> Designed and Coded by <strong>IRINA<b>BALYAN<p></strong>
-</footer>
+  </footer>
 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    // Change style of navbar on scroll
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
+      } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
     }
-}
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else {
+      } else {
         x.className = x.className.replace(" w3-show", "");
+      }
     }
-}
-/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
-initComparisons();
+    /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+    initComparisons();
 
-filterSelection("all")
+    filterSelection("all")
 
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
     }
-  }
-}
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
     }
-  }
-  element.className = arr1.join(" ");
-}
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
 
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
 
 </body>
+
 </html>
