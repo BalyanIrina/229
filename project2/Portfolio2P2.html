@@ -66,184 +66,270 @@
     }
 
     .w3-button:hover {
-      background-color: #fed351  !important;
+      background-color: #fed351 !important;
     }
 
-      * {
-        box-sizing: border-box;
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      body {
-        background-color: whie;
+    body {
+      background-color: whie;
 
-      }
+    }
 
-      /* Center website */
-      .main {
-        max-width: 1000px;
-        margin: auto;
-      }
+    /* Center website */
 
-      h1 {
-        font-size: 50px;
-        word-break: break-all;
-      }
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
 
-      .row {
-        margin: 10px -16px;
-      }
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
 
-      /* Add padding BETWEEN each column */
-      .row,
-      .row>.column {
-        padding: 8px;
-      }
+    .row {
+      margin: 10px -16px;
+    }
 
-      /* Create three equal columns that floats next to each other */
+    /* Add padding BETWEEN each column */
+
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
+
+    /* Create three equal columns that floats next to each other */
+
+    .column {
+      float: left;
+      width: 33.33%;
+      display: none;
+      /* Hide all elements by default */
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
       .column {
-        float: left;
-        width: 33.33%;
-        display: none;
-        /* Hide all elements by default */
-        margin-bottom: 16px;
-        padding: 0 8px;
-      }
-
-      @media screen and (max-width: 650px) {
-        .column {
-          width: 100%;
-          display: block;
-        }
-
-        #myBtnContainer {
-          margin-left: 0;
-        }
-
-        .view {
-          max-width: 100%;
-          width: 650px;
-        }
-      }
-      /* Clear floats after rows */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      /* Content */
-      .content {
-        background-color: #f1f1f1;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      }
-      h4 {
-        padding: 10px;
-      }
-      p {
-        padding: 10px;
-      }
-      .container {
-        padding: 0 16px;
-      }
-
-      .container::after,
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-      .title {
-        color: grey;
-      }
-      /* The "show" class is added to the filtered elements */
-      .show {
+        width: 100%;
         display: block;
       }
 
-      /* Style the buttons */
-      .btn {
-        border: none;
-        outline: none;
-        padding: 12px 16px;
-        background-color: white;
-        cursor: pointer;
-      }
-
-      .btn:hover {
-        background-color: #fed351;
-      }
-
-      .btn.active {
-        background-color: #fed351;
-        color: white;
+      #myBtnContainer {
+        margin-left: 0;
       }
 
       .view {
-        padding: 5% 40%;
-        background: none;
-        border: none;
-        position: relative;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 3px;
-        cursor: pointer;
-
+        max-width: 100%;
+        width: 650px;
       }
+    }
 
-      .view:after,
-      .view:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        border: 2px solid #fed351;
-        transition: -webkit-transform 0.2s;
-        transition: transform 0.2s;
-        transition: transform 0.2s, -webkit-transform 0.2s;
-      }
+    /* Clear floats after rows */
 
-      .view:after,
-      .view:before {
-        -webkit-transform: translate(0);
-        transform: translate(0);
-      }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-      .view:hover:after {
-        -webkit-transform: translate(3px, 3px);
-        transform: translate(3px, 3px);
-      }
+    /* Content */
 
-      .view:hover:before {
-        -webkit-transform: translate(-3px, -3px);
-        transform: translate(-3px, -3px);
-      }
+    .content {
+      background-color: #f1f1f1;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
 
-      footer p {
-        color:#fed351;
-      }
-      .fa {
-        margin:0 10px;
-      }
-      .fa:hover{
-        color:white;
-      }
-      strong {color:white;}
+    h4 {
+      padding: 10px;
+    }
 
-      .w3-xlarge .w3-section
-      {color:#fed351 !important;
+    p {
+      padding: 10px;
+    }
 
-      }
+    .container {
+      padding: 0 16px;
+    }
 
-      .w3-xlarge {
-          font-size: 50px!important;
-        }
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
-        .w3-black, .w3-hover-black:hover .fa{
-          color: #fed351!important;
-        }
+    .title {
+      color: grey;
+    }
+
+    /* The "show" class is added to the filtered elements */
+
+    .show {
+      display: block;
+    }
+
+    /* Style the buttons */
+
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #fed351;
+    }
+
+    .btn.active {
+      background-color: #fed351;
+      color: white;
+    }
+
+    .view {
+      padding: 5% 40%;
+      background: none;
+      border: none;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 3px;
+      cursor: pointer;
+
+    }
+
+    .view:after,
+    .view:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border: 2px solid #fed351;
+      transition: -webkit-transform 0.2s;
+      transition: transform 0.2s;
+      transition: transform 0.2s, -webkit-transform 0.2s;
+    }
+
+    .view:after,
+    .view:before {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+
+    .view:hover:after {
+      -webkit-transform: translate(3px, 3px);
+      transform: translate(3px, 3px);
+    }
+
+    .view:hover:before {
+      -webkit-transform: translate(-3px, -3px);
+      transform: translate(-3px, -3px);
+    }
+
+/* lightbox */
+    .portfolio__desc {
+      height: auto;
+    }
+
+    .portfolio__desc h3 {
+      font-size: 26px;
+      text-align: center;
+      color: #535c68;
+    }
+
+    .portfolio-lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(254, 211, 81, .8);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0, 1);
+      transform-origin: top;
+      transition: all .5s ease-in-out;
+    }
+
+    .portfolio-lightbox:target {
+      transform: scale(1, 1);
+    }
+
+    .portfolio-lightbox__content {
+      width: 95%;
+      height: 93%;
+      background: white;
+      padding: 15px;
+      position: relative;
+    }
+
+    .portfolio-lightbox__content img {
+      float: left;
+      margin-right: 15px;
+    }
+
+    .btn--fechar {
+      text-decoration: none;
+      color: #fff;
+    }
+    .btn--fechar {
+      background: rgba(0, 0, 0, .5);
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      right: -15px;
+      top: -15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn--fechar::after {
+      content: 'x';
+      color: #fed351;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    footer p {
+      color: #fed351;
+    }
+
+    .fa {
+      margin: 0 10px;
+    }
+
+    .fa:hover {
+      color: white;
+    }
+
+    strong {
+      color: white;
+    }
+
+    .w3-xlarge .w3-section {
+      color: #fed351 !important;
+
+    }
+
+    .w3-xlarge {
+      font-size: 50px !important;
+    }
+
+    .w3-black,
+    .w3-hover-black:hover .fa {
+      color: #fed351 !important;
+    }
 
 
     }
@@ -290,10 +376,12 @@
     <div class="row">
       <div class="column batic">
         <div class="content">
-          <img src="image2.jpeg" alt="1" style="width:100%">
-          <h4>Mountains</h4>
-          <p>Lorem ipsum dolor..</p>
-          <p><button class="view">VIEW</button></p>
+              <img src="image2.jpeg" alt="1" style="width:100%">
+              <div class="portfolio__desc">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+                <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
+              </div>
         </div>
       </div>
       <div class="column batic">
@@ -364,7 +452,22 @@
       </div>
       <!-- END GRID -->
     </div>
+    <!--lightbox-->
 
+    <div class="portfolio-lightboxes">
+      <div id="portfolio-item-1" class="portfolio-lightbox">
+        <div class="portfolio-lightbox__content">
+          <a href="#" class="btn--fechar"></a>
+          <img src="hate.jpg" alt="">
+          <h3 class="portfolio-lightbox__title">
+            hello
+          </h3>
+          <p class="portfolio-lightbox__body">
+          I am here!!!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi hic illum eveniet ducimus. Explicabo consequuntur mollitia, praesentium totam debitis vel modi optio nihil eveniet velit. Recusandae voluptatem maxime nam voluptatibus.
+          </p>
+        </div>
+      </div>
+      </div>
     <!-- END MAIN -->
   </div>
   </div>
@@ -372,78 +475,83 @@
     <a href="#home" class="w3-button w3-light-grey">BACK TO TOP</a>
     <div class="w3-xlarge w3-section">
       <a href="https://www.facebook.com/irina.balyan.5"><i class="fa fa-facebook-official "></i></a>
-     <a href="https://www.instagram.com/balyan_designs/">  <i class="fa fa-instagram "></i></a>
-    <a href="https://twitter.com/miss_balyan">  <i class="fa fa-twitter "></i></a>
+      <a href="https://www.instagram.com/balyan_designs/">  <i class="fa fa-instagram "></i></a>
+      <a href="https://twitter.com/miss_balyan">  <i class="fa fa-twitter "></i></a>
       <i class="fa fa-linkedin "></i>
     </div>
     <p> Designed and Coded by <strong>IRINA<b>BALYAN<p></strong>
-</footer>
-<script>
-  // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  </footer>
+  <script>
+    // Change style of navbar on scroll
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
+      } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
     }
-}
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else {
+      } else {
         x.className = x.className.replace(" w3-show", "");
+      }
     }
-}
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+    filterSelection("all")
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
     }
-  }
-  element.className = arr1.join(" ");
-}
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
 
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-</script>
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
 
 
 
