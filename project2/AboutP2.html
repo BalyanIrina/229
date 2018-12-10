@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+      color: #1c1c24;
+      line-height: 1.8;
+    }
+
+    /* Center website */
+
+    .bgimg-1 {
+      background-image: url('white.jpg');
+      min-height: 33%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover
+    }
+ .w3-padding-large  .w3-xlarge .w3-wide .w3-animate-opacity{
+   text-align: right !important;
+   margin: 0 auto;
+   padding-top: 50px;
+ }
+    .mainlogo {
+      float: right;
+      width: 125px;
+      margin-top: 5px;
+      margin-right: 15px;
+    }
+
+    /*    @media only screen and (max-device-width: 1600px){}*/
+
+    .w3-bar .w3-button:hover {
+      background: #fed351 !important;
+    }
+
+    .w3-black {
+      background: ##1c1c24 !important;
+    }
+
+    .w3-button:hover {
+      background-color: #fed351  !important;
+    }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: white;
+
+      }
+
+      /* Center website */
+      .main {
+        max-width: 1000px;
+        margin: auto;
+        margin-top: -150px;
+      }
+
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
+
+      .row {
+        margin: 10px -16px;
+      }
+
+      /* Add padding BETWEEN each column */
+      .row,
+      .row>.column {
+        padding: 8px;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        display: none;
+        /* Hide all elements by default */
+        margin-bottom: 16px;
+        padding: 0 8px;
+
+      }
+
+      h2{
+        font-size:92px;
+          margin-top:-20px;
+          margin-bottom: 40px;
+        padding: 0 45%;
+
+      }
+      h4{
+        text-align: center;
+      }
+      ul {
+line-height: 0.5;
+padding:0 75px
+      }
+  li{
+    padding: 0 50px;
+  }
+.es {  float: left;
+  width: 205%;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 0 12px
+
+ }
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+
+      }
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Content */
+      .content {
+        background-color: #f1f1f1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      h4 {
+        padding: 10px;
+      }
+      p {
+        font-size: 15px;
+        padding:0 20px;
+      }
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+
+
+      .btn {
+        border: none;
+        outline: none;
+        padding: 6px 26%;
+        background-color: #fed351 ;
+        cursor: pointer;
+      }
+a { text-decoration: none;}
+
+      footer p {
+        color:#fed351;
+      }
+      strong {color:white;}
+      .fa {
+        margin:0 10px;
+      }
+      .fa:hover{
+        color:white;
+      }
+      .w3-xlarge .w3-section
+      {color:#fed351 !important;
+
+      }
+
+      .w3-xlarge {
+          font-size: 50px!important;
+        }
+
+        .w3-black, .w3-hover-black:hover .fa{
+          color: #fed351!important;
+        }
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+      <a href="HomeP2.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="HomeP2.html#about" class="w3-bar-item w3-button w3-hide-small"> ABOUT</a>
+      <a href="HomeP2.html#portfolio" class="w3-bar-item w3-button w3-hide-small"> PORTFOLIO</a>
+      <a href="HomeP2.html#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+      <img class="mainlogo" src="logorightcolor.png" alt="logo" />
+    </div>
+
+
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="HomeP2.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="HomeP2.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="HomeP2.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <img class="mainlogo" src="logo.png" alt="logo" />
+    </div>
+  </div>
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+
+    </div>
+  </div>
+  <div class="main">
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+<div class="column me">
+  <img src="me.png" style="width:95%">
+  <div class="btn"> <a href="Resume_Irina_Balyan.pdf" download> DOWNLOAD RESUME </a> </div>
+  </div>
+  <div class="column">
+
+    <h2>ABOUT</h2>
+    <div class= "es">
+    <p>Hello, I am Irina and I am a Graphic and Web designer.
+    Art, Design, and Fashion are my passions. I love minimalism but I always have ditail work going on in my art. In my openion Art and design are in ditails.
+  I adore my proffesion and everything that is related to it. Working with the clients is the greatest pleasure for me. No matter what kind of design or art you will order me I will be happy to setisfy your needs fullest with all the creativity and energy I have.  </p>
+</div>
+</div>
+</div>
+
+<div class="row">
+      <div class="column interface design">
+        <div class="content">
+          <h4>SOFTWARE</h4>
+            <li>Adobe Creative Suite</li>
+             <ul>Photoshop</ul>
+              <ul>Illustrator</ul>
+               <ul>InDesign</ul>
+                <ul>Dreamweaver</ul>
+                <ul>After Effects</ul>
+                 <li> Microsoft Creative Suite</li>
+                  <ul>Word</ul>
+                  <ul> PowerPoint</ul>
+                    <ul> Excel</ul>
+<li> Atom</li>
+<li> Github</li>
+<li> Invision</ll>
+<li> Wireframe.cc</ll>
+<li>3D’s Max</ll>
+  <h4> SKILLS </h4>
+  <li>Working knowledge of web development HTML and CSS</li>
+  <li>Lo-Fi Prototyping</li>
+  <li>Hi-Fi Prototyping </li>
+  <li> Wireframing</li>
+<h4>LANGUAGES</h4>
+<li>English</li>
+<li>Armenian</li>
+<li>Russian</li>
+
+
+
+
+        </div>
+      </div>
+      <div class="column interface design">
+        <div class="content">
+          <h4>EDUCATION</h4>
+          <p><b>LANSING COMMUNITY COLLEGE | 2017-Present</b></br>
+             Major: Graphic Communication </br>
+             <b>YEREVAN STATE COLLEGE OF FINE ARTS | 2010-2014 </b></br>
+            Major: Arts Foundations </br>
+            <b>ART STUDIO NAMED AFTER H. IGITYAN | 2003-2010</b></br>
+             Major: Painter-designer </br>
+            <li>Participated in a number of exhibitions</li>
+             <li> Published illustrations in children’s books</li>
+             <li>Multiple pieces of art chosen to represent Armenia in Austria, Australia, and Rome.</li>
+<h4>ACHIEVEMENTS</h4>
+            <p> <b>WOMEN IN ART SERIES | 2017 and 2018</b></br>
+               Recipient of the award  “Women in Art Series” contest heldat at Lansing Community College.</br>
+               <b> THE ERIC ZIMMERMAN VISUAL ARTS FUND | 2017   </b></br>
+                Recipient of Eric Zimmerman Award contest  held at Lansing Community College. </br>
+                <b>EUROPA STAMP | 2010 </b> </br>
+                 “Songs of Love” illustration chosen to represent Armenia in philatelic competition in Europe and
+                 was selected for a stamp design.
+                 <h4>EXPERIENCE</h4>
+                                        <p><b> INTERFACE DESIGN | TILKIAN CLOTHING BRAND |2018</b></br>
+                                 www.tilkian.org </br>
+                                    <b>LANSING COMMUNITY COLLEGE | ART AND PHOTO RESOURCES CENTER | 2017- Present</b></br>
+                                     Technology Support Services and maintenance of photo   studios, computer labs, and, art and photo equipment.</br>
+                                     <b> DESIGNER | FREELANCE | 2015-2017 </b></br>
+                                    Designed traditional Armenian costumes for Dance Academies and Performing Arts Studios.
+                   </p>
+      </div>
+      </div>
+      <div class="column interface design">
+        <div class="content">
+
+           <h4>LEADERSHIP</h4>
+             <li>Class president at College of Fine Arts</li>
+            <li>Acting as liaison different personality types </li>
+            <li>Planned exhibitions for the course</li>
+             <li> Coordinated fashion shows </li>
+             <li> Motivated a project team while still setting goals for myself and working to achieve them with my team</li>
+<h4>COMMUNICATION</h4>
+<li>Proﬁcient in prioritizing and completing tasks in a timely manner</li>
+ <li>Adept at multitasking to achieve individual and team goals</li>
+  <li>Committed to quality and  excellence</li>
+   <li>Responsible and ready to do any job to fullest with the all of my energy and hard work </li>
+   <li> Friendly and easy to communicate with</li>
+  
+        </div>
+      </div>
+      <div class="column interface design">
+        <div class="img-comp-container">
+          <div class="img-comp-img">
+            <img src="hate.jpg" width="300" height="150">
+          </div>
+          <div class="img-comp-img img-comp-overlay">
+            <img src="lovee.jpg" width="300" height="150">
+          </div>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+  </div>
+  </div>
+  <footer class="w3-center w3-black w3-padding-64 ">
+    <a href="#home" class="w3-button w3-light-grey">BACK TO TOP</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.facebook.com/irina.balyan.5"><i class="fa fa-facebook-official "></i></a>
+     <a href="https://www.instagram.com/balyan_designs/">  <i class="fa fa-instagram "></i></a>
+    <a href="https://twitter.com/miss_balyan">  <i class="fa fa-twitter "></i></a>
+      <i class="fa fa-linkedin "></i>
+    </div>
+    <p> Designed and Coded by <strong>IRINA<b>BALYAN<p></strong>
+</footer>
+<script>
+  // Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+
+
+
+</body>
+
+</html>
