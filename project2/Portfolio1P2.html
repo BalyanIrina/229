@@ -259,9 +259,9 @@
           }
 
           .portfolio-lightbox__content {
-            width: 95%;
-            height: 93%;
-            background: white;
+            width: 80%;
+            height: 80%;
+
             padding: 15px;
 
             position: relative;
@@ -301,7 +301,9 @@
               display: none;
             }
             .container2 {
-              position: relative;}
+              position: relative;
+border: 20px solid white;
+            }
               .prev,
       .next {
         cursor: pointer;
@@ -441,7 +443,7 @@
           <div class="portfolio__desc">
           <h4>Mountains</h4>
           <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
+          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
         </div>
         </div>
       </div>
@@ -451,7 +453,7 @@
           <div class="portfolio__desc">
           <h4>Lights</h4>
           <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
+          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
         </div>
         </div>
       </div>
@@ -461,18 +463,18 @@
           <div class="portfolio__desc">
           <h4>Forest</h4>
           <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
+          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
         </div>
         </div>
       </div>
 
       <div class="column coding">
         <div class="content">
-          <img src="c.jpg" alt="4" style="width:100%">
+          <img src="image2.jpeg" alt="4" style="width:100%">
           <div class="portfolio__desc">
           <h4>Retro</h4>
           <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
+          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
         </div>
         </div>
       </div>
@@ -482,7 +484,7 @@
           <div class="portfolio__desc">
           <h4>Fast</h4>
           <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
+          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
         </div>
         </div>
       </div>
@@ -492,7 +494,7 @@
           <div class="portfolio__desc">
           <h4>Classic</h4>
           <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
+          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
         </div>
           </div>
         </div>
@@ -502,7 +504,7 @@
           <div class="portfolio__desc">
           <h4>Girl</h4>
           <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
+          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
         </div>
         </div>
       </div>
@@ -512,7 +514,7 @@
           <div class="portfolio__desc">
           <h4>Man</h4>
           <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
+          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
         </div>
           </div>
         </div>
@@ -540,33 +542,42 @@
           <div class="container2">
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <div class="mySlides">
-              <div class="numbertext">1 / 6</div>
-              <img src="lovee.jpg" style="width:100%">
+              <div class="numbertext">1 / 8</div>
+              <img src="inside-front.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
-              <div class="numbertext">2 / 6</div>
-              <img src="hate.jpg" style="width:100%">
+              <div class="numbertext">2 / 8</div>
+              <img src="cdinside.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
-              <div class="numbertext">3 / 6</div>
-              <img src="img_mountains_wide.jpg" style="width:100%">
+              <div class="numbertext">3 / 8</div>
+              <img src="cdfront.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
-              <div class="numbertext">4 / 6</div>
-              <img src="img_lights_wide.jpg" style="width:100%">
+              <div class="numbertext">4 / 8</div>
+              <img src="cd-back.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
-              <div class="numbertext">5 / 6</div>
-              <img src="img_nature_wide.jpg" style="width:100%">
+              <div class="numbertext">5 / 8</div>
+              <img src="outside.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
-              <div class="numbertext">6 / 6</div>
-              <img src="img_snow_wide.jpg" style="width:100%">
+              <div class="numbertext">6 / 8</div>
+              <img src="1inside.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 8</div>
+              <img src="2inside.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">8 / 8</div>
+              <img src="3inside.jpg" style="width:100%">
             </div>
 
 
@@ -578,22 +589,28 @@
 
             <div class="row2">
               <div class="column2">
-                <img class="demo cursor" src="lovee.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                <img class="demo cursor" src="inside-front.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
               </div>
               <div class="column2">
-                <img class="demo cursor" src="hate.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                <img class="demo cursor" src="cdinside.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
               </div>
               <div class="column2">
-                <img class="demo cursor" src="lovee.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                <img class="demo cursor" src="cdfront.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
               </div>
               <div class="column2">
-                <img class="demo cursor" src="hate.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                <img class="demo cursor" src="cd-back.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
               </div>
               <div class="column2">
-                <img class="demo cursor" src="lovee.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                <img class="demo cursor" src="outside.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
               </div>
               <div class="column2">
-                <img class="demo cursor" src="hate.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                <img class="demo cursor" src="1inside.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+              </div>
+              <div class="column2">
+                <img class="demo cursor" src="2inside.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+              </div>
+              <div class="column2">
+                <img class="demo cursor" src="3inside.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
               </div>
             </div>
           </div>
