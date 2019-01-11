@@ -1,0 +1,33 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  color: #1c1c24;
+  line-height: 1.8;
+}
+* {
+  box-sizing: border-box;
+}
+.toplogo {
+  float: right;
+}
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+}
+.w3-button:hover {
+  background: #fed351 !important;}
+
+  .w3-black {
+    background: #fee084 !important;
+  }

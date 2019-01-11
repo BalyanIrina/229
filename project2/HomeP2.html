@@ -1,0 +1,780 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif;
+  }
+
+  body,
+  html {
+    height: 100%;
+    color: #1c1c24;
+    line-height: 1.8;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bgimg-1 {
+    background-image: url('logorightcolor.png'), url('wn.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: 50%, cover;
+  }
+
+  img {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bgimg-2 {
+    background-image: url("fox.jpg");
+    min-height: 400px;
+  }
+
+  .bgimg-3 {
+    background-image: url("blue.jpg");
+    min-height: 400px;
+  }
+
+  .about {
+    background-image: url("image1.jpg");
+    min-height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+
+  .w3-xxlarge .w3-text-white .w3-wide {
+
+    margin: 0 auto;
+
+
+  }
+
+
+  }
+
+  .w3-hover-opacity {
+    cursor: pointer;
+  }
+
+
+  .w3-bar .w3-button:hover {
+    background: #fed351 !important;
+  }
+
+  .mainlogo {
+    float: right;
+    width: 125px;
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+
+  .img-comp-container {
+    position: relative;
+    height: 500px;
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .img-comp-img img {
+    display: block;
+    vertical-align: middle;
+  }
+
+  img {
+    margin-top: -25px;
+    margin-left: auto;
+
+
+  }
+
+  .w3-padding-64 {
+  /*  height: 80vh; */
+  }
+
+  .img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    width: 40px;
+    height: 40px;
+    background-color: #fed351;
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+
+  .art {
+    font-size: 20px;
+    color: #fed351;
+    position: absolute;
+    z-index: 0;
+    margin-top: -325px;
+    margin-left: 650px;
+
+  }
+
+  .graphic {
+    font-size: 20px;
+    color: #fed351;
+    position: absolute;
+    z-index: 8;
+    margin-top: -325px;
+    margin-left: 20px;
+  }
+
+  .w3-black {
+    background: ##1c1c24 !important;
+  }
+  .column {
+    padding: 8px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    /* Hide all elements by default */
+    margin-bottom: 16px;
+    padding: 0 8px;
+
+  }
+
+  h2 {
+    font-size: 92px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+
+
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  ul {
+    line-height: 0.5;
+    padding: 0 75px
+  }
+
+  li {
+    padding: 0 25px;
+  }
+
+  .es {
+    float: left;
+    width: 205%;
+    height: 395px;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 0 12px
+  }
+
+
+
+  @media only screen and (max-device-width: 1600px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+    }
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+    .row {
+      margin: 10px -16px;
+    }
+
+
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .title {
+      color: grey;
+    }
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Content */
+
+  .content {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  h4 {
+    padding: 10px;
+
+  }
+.lang{
+  margin-top: 5px;
+}
+  p {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after,
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 92px;}
+.es p{ font-size: 20px;
+}
+  @media screen and (min-width:650px) {
+    .column {
+      float: left;
+      width: 33.33%;
+      display: block;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .content {
+
+    padding: 10px;
+  }
+
+
+  .show {
+    display: block;
+  }
+
+
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #fed351;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .btn:hover {
+    background-color: #ddd;
+  }
+
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .view {
+    padding: 10px 65px;
+    background: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-top: 17px;
+
+  }
+#view1{
+  padding: 5% 27%;
+}
+#va {
+  color:white;
+}
+.insta{
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+  .view:after,
+  .view:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #fed351;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+
+  .view:after,
+  .view:before {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  .view:hover:after {
+    -webkit-transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
+  }
+
+  .view:hover:before {
+    -webkit-transform: translate(-3px, -3px);
+    transform: translate(-3px, -3px);
+  }
+
+  }
+
+  footer p {
+    color: #fed351;
+  }
+
+  .fa {
+    margin: 0 10px;
+  }
+
+  .fa:hover {
+    color: white;
+  }
+
+  strong {
+    color: white;
+  }
+
+  .w3-xlarge .w3-section {
+    color: #fed351 !important;
+  }
+
+  .w3-xlarge {
+    font-size: 50px !important;
+  }
+
+  .w3-black,
+  .w3-hover-black:hover .fa {
+    color: #fed351 !important;
+  }
+
+
+  }
+</style>
+<script>
+  function initComparisons() {
+    var x, i;
+    /*find all elements with an "overlay" class:*/
+    x = document.getElementsByClassName("img-comp-overlay");
+    for (i = 0; i < x.length; i++) {
+      /*once for each "overlay" element:
+      pass the "overlay" element as a parameter when executing the compareImages function:*/
+      compareImages(x[i]);
+    }
+
+    function compareImages(img) {
+      var slider, img, clicked = 0,
+        w, h;
+      /*get the width and height of the img element*/
+      w = img.offsetWidth;
+      h = img.offsetHeight;
+      /*set the width of the img element to 50%:*/
+      img.style.width = (w / 2) + "px";
+      /*create slider:*/
+      slider = document.createElement("DIV");
+      slider.setAttribute("class", "img-comp-slider");
+      /*insert slider*/
+      img.parentElement.insertBefore(slider, img);
+      /*position the slider in the middle:*/
+      slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+      slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+      /*execute a function when the mouse button is pressed:*/
+      slider.addEventListener("mousedown", slideReady);
+      /*and another function when the mouse button is released:*/
+      window.addEventListener("mouseup", slideFinish);
+      /*or touched (for touch screens:*/
+      slider.addEventListener("touchstart", slideReady);
+      /*and released (for touch screens:*/
+      window.addEventListener("touchstop", slideFinish);
+
+      function slideReady(e) {
+        /*prevent any other actions that may occur when moving over the image:*/
+        e.preventDefault();
+        /*the slider is now clicked and ready to move:*/
+        clicked = 1;
+        /*execute a function when the slider is moved:*/
+        window.addEventListener("mousemove", slideMove);
+        window.addEventListener("touchmove", slideMove);
+      }
+
+      function slideFinish() {
+        /*the slider is no longer clicked:*/
+        clicked = 0;
+      }
+
+      function slideMove(e) {
+        var pos;
+        /*if the slider is no longer clicked, exit this function:*/
+        if (clicked == 0) return false;
+        /*get the cursor's x position:*/
+        pos = getCursorPos(e)
+        /*prevent the slider from being positioned outside the image:*/
+        if (pos < 0) pos = 0;
+        if (pos > w) pos = w;
+        /*execute a function that will resize the overlay image according to the cursor:*/
+        slide(pos);
+      }
+
+      function getCursorPos(e) {
+        var a, x = 0;
+        e = e || window.event;
+        /*get the x positions of the image:*/
+        a = img.getBoundingClientRect();
+        /*calculate the cursor's x coordinate, relative to the image:*/
+        x = e.pageX - a.left;
+        /*consider any page scrolling:*/
+        x = x - window.pageXOffset;
+        return x;
+      }
+
+      function slide(x) {
+        /*resize the image:*/
+        img.style.width = x + "px";
+        /*position the slider:*/
+        slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+      }
+    }
+  }
+</script>
+
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+      <img class="mainlogo" src="logorightcolor.png" alt="logo" />
+    </div>
+
+
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <img class="mainlogo" src="logo.png" alt="logo" />
+    </div>
+  </div>
+
+
+  <div class="bgimg-1 w3-display-container " id="home">
+    <div class="bg-text">
+      </b>
+    </div>
+  </div>
+
+  <div class="about " id="about">
+    <span class="w3-xxlarge w3-text-white w3-wide"><h2>ABOUT</h2></span>
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64">
+    <h3 class="w3-center"></h3>
+    <div class="w3-row">
+      <div class="row">
+      <div class="column me">
+        <img src="me.png" style="width:95%">
+        <div class="btn"> <a href="Resume_Irina_Balyan.pdf" download> DOWNLOAD RESUME </a> </div>
+      </div>
+      <div class="column">
+        <div class="es">
+          <p>Hello, I am Irina and I am a Graphic and Web designer. Art, Design, and Fashion are my passions. I love minimalism but I always have ditail work going on in my art. In my openion Art and design are in ditails. I adore my proffesion and everything
+            that is related to it. Working with the clients is the greatest pleasure for me. No matter what kind of design or art you will order me I will be happy to setisfy your needs fullest with all the creativity and energy I have. </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="w3-row">
+    <div class="column interface design">
+      <div class="content">
+        <h4>SKILLS</h4>
+        <li>Working knowledge of web development HTML and CSS</li>
+        <li>Lo-Fi Prototyping</li>
+        <li>Hi-Fi Prototyping </li>
+        <li> Wireframing</li>
+        <h4 class="lang">LANGUAGES</h4>
+        <li>English</li>
+        <li>Armenian</li>
+        <li>Russian</li>
+
+      </div>
+    </div>
+    <div class="column interface design">
+      <div class="content">
+        <h4>SOFTWARE</h4>
+        <li>Adobe Creative Suite</li>
+        <ul>Photoshop</ul>
+        <ul>Illustrator</ul>
+        <ul>InDesign</ul>
+        <ul>Dreamweaver</ul>
+        <ul>After Effects</ul>
+        <li> Atom</li>
+        <li> Github</li>
+        <li> Invision</ll>
+          <li> Wireframe.cc</ll>
+            <li>3D’s Max</ll>
+
+      </div>
+    </div>
+    <div class="column interface design">
+      <div class="content">
+        <h4>EDUCATION</h4>
+        <b>LANSING COMMUNITY COLLEGE | 2017-Present</b></br>
+          Major: Graphic Communication </br>
+          <b>YEREVAN STATE COLLEGE OF FINE ARTS | 2010-2014 </b></br>
+          Major: Arts Foundations </br>
+          <div class="spacer">
+            &nbsp;
+          </div>
+          <div class="spacer">
+            &nbsp;
+          </div>
+      </div>
+
+
+<a href="AboutP2.html"><button class="view" id="view1">READ MORE...</button></a>
+
+</div>
+
+    </div>
+  </div>
+
+  <div class="spacer">
+    &nbsp;
+  </div>
+
+  <div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide"><h2>PORTFOLIO</h2></span>
+    </div>
+  </div>
+
+
+  <div class="w3-content w3-container w3-padding-64" >
+
+    <div class="w3-row-padding w3-center">
+      <div class="img-comp-container">
+        <div class="img-comp-img">
+          <img src="va.jpg" width="950" height="500">
+          <div class="art"><a href="Portfolio2P2.html"><button class="view" id="va">Visual Arts</button></a></div>
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src="gd.jpg" width="950" height="500">
+          <div class="graphic"><a href="Portfolio1P2.html"><button class="view">Graphic design</button></a></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide"><h2>CONTACT</h2></span>
+    </div>
+  </div>
+
+
+  <div class="w3-content w3-container w3-padding-64">
+    <h3 class="w3-center">For Questions and suggestions send me an E-mail</h3>
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Here and there, EVERYWHERE<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: balyanirina94@gmail.com<br>
+          <img class="insta" src="insta.jpeg" width="300"/>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="w3-center w3-black w3-padding-64 ">
+    <a href="#home" class="w3-button w3-light-grey">BACK TO TOP</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.facebook.com/irina.balyan.5"><i class="fa fa-facebook-official "></i></a>
+      <a href="https://www.instagram.com/balyan_designs/">  <i class="fa fa-instagram "></i></a>
+      <a href="https://twitter.com/miss_balyan">  <i class="fa fa-twitter "></i></a>
+      <i class="fa fa-linkedin "></i>
+    </div>
+    <p> Designed and Coded by <strong>IRINA<b>BALYAN<p></strong>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+    initComparisons();
+
+    filterSelection("all")
+
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+</body>
+
+</html>

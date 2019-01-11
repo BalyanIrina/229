@@ -1,0 +1,137 @@
+@charset "UTF-8";
+body {
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	margin-bottom: 0px;
+	background-color: #FFFFEB;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+li {
+	float: right;
+}
+li a {
+	display: block;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
+	color: #002057;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	text-decoration: none;
+}
+li a:hover {
+	color: #3680a1;
+}
+h1 {
+	margin-left: 449px;
+	margin-bottom: 17px;
+	padding-top: 102px;
+	padding-bottom: 9px;
+	color: #002057;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 12px;
+}
+#logo {
+	margin-top: -36px;
+	margin-bottom: -83px;
+	padding-bottom: 14px;
+}
+p {
+	margin-bottom: -300px;
+	margin-top: 147px;
+	border-bottom: medium solid #002057;
+	color: #002057;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+}
+#shenq1 {
+	margin-top: 200px;
+	margin-left: 25px;
+}
+#shenq2 {
+	margin-left: 70px;
+}
+#axjik {
+	margin-left: 70px;
+	/* [disabled]margin-top: -17px; */
+	margin-bottom: 32px;
+}
+#carer {
+	margin-left: 25px;
+	margin-top: 75px;
+}
+#final {
+	margin-left: 75px;
+}
+#portrait {
+	margin-left: 70px;
+}
+#orange {
+	margin-left: 25px;
+	margin-top: 75px;
+}
+#mejtex {
+	margin-left: 75px;
+}
+#mandarin {
+	margin-left: 70px;
+}
+#img {
+	margin-left: 25px;
+	margin-top: 75px;
+}
+h6 {
+	margin-top: 350px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	color: #002057;
+	border-bottom: medium solid #002057;
+}
+#kendaniner {
+	margin-top: 25px;
+	margin-left: 25px;
+}
+#balyan {
+	margin-left: 76px;
+}
+#es {
+	margin-left: 70px;
+}
+video  {
+	width: 620px;
+	margin-left: 336px;
+	margin-top: 75px;
+	font-size: 24px;
+}
+h5 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	color: #002057;
+	border-bottom: medium solid #002057;
+}
+#poster {
+	margin-left: 25px;
+	margin-top: 25px;
+}
+#poster2 {
+	margin-left: 70px;
+}
+.copyright {
+	height: 100px;
+	padding-left: 566px;
+	background-color: #002057;
+}
+h4 {
+	margin-top: 75px;
+	padding-top: 40px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14px;
+	color: #ECECEC;
+}

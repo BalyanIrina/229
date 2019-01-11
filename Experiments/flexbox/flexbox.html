@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+.header {
+    padding: 150px;
+    text-align: center;
+    background-image: url(karmir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.navbar a:hover {
+    background-color: #a42b34;
+    color: black;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #a42b34;
+}
+
+.panel {
+    padding: 18px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+.container:hover input ~ .checkmark {
+    background-color: #a42b34;
+}
+
+
+.container input:checked ~ .checkmark {
+    background-color: #a42b34;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+.container1:hover input ~ .checkmark {
+    background-color: #a42b34;
+}
+
+
+.container1 input:checked ~ .checkmark {
+    background-color: #a42b34;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container1 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container1 .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #a42b34;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:’’;
+    content:none;
+}
+
+
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+
+
+
+
+h1 {
+	font-size: 28px;
+	font-weight: 300;
+	flex: 1;
+}
+
+h5 {
+	font-weight: 500;
+	line-height: 1.7em;
+}
+
+h6 {
+	color: #666;
+	font-size: 14px;
+}
+
+
+.product-filter {
+	display: flex;
+	padding: 30px 0;
+}
+
+.sort {
+	display: flex;
+	align-self: flex-end;
+}
+
+.collection-sort {
+ display: flex;
+	flex-direction: column;
+}
+
+.collection-sort:first-child {
+	padding-right: 20px;
+}
+
+label {
+	color: #666;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+
+	padding: 2%;
+	flex: 1 16%;
+
+	background-color: #FFF;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-image img {
+	width: 100%;
+}
+
+.product-info {
+	margin-top: auto;
+	padding-top: 20px;
+	text-align: center;
+}
+
+@media ( max-width: 920px ) {
+
+	.product-card {
+		flex: 1 21%;
+	}
+
+	.products .product-card:first-child,
+	.products .product-card:nth-child(2) {
+		flex: 2 46%;
+	}
+
+}
+
+@media ( max-width: 600px ) {
+
+	.product-card {
+		flex: 1 46%;
+	}
+
+}
+
+@media ( max-width: 480px ) {
+
+	h1 {
+		margin-bottom: 20px;
+	}
+
+	.product-filter {
+		flex-direction: column;
+	}
+
+	.sort {
+		align-self: flex-start;
+	}
+
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1>Clothing Brand</h1>
+
+</div>
+
+
+<div class="navbar">
+  <a href="#">HOME</a>
+  <a href="#">WOMAN</a>
+  <a href="#">MAN</a>
+
+</div>
+
+
+<div class="row">
+  <div class="side">
+      <h2>Filter+Sort</h2>
+
+<button class="accordion">SIZE</button>
+<div class="panel">
+  <label class="container">S
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">M
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">L
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+</div>
+
+<button class="accordion">BRAND</button>
+<div class="panel">
+  <label class="container1">Valentino
+    <input type="radio" checked="checked" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container1">Fendi
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container1">Balenciaga
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container1">Balmain
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+</div>
+
+<button class="accordion">PRICE</button>
+<div class="panel">
+  <div class="""slidecontainer">
+    <p>Value: &#36;<span id="demo"></span></p>
+<input type="range" min="100" max="10000" value="50" class="slider" id="myRange">
+</div>
+</div>
+
+
+  </div>
+  <div class="main">
+  <div class="sort">
+    <div class="collection-sort">
+      <label>Filter by:</label>
+      <select>
+        <option value="/">All</option>
+        <option value="/">Pink</option>
+        <option value="/">Neon</option>
+      </select>
+    </div>
+
+    <div class="collection-sort">
+      <label>Sort by:</label>
+      <select>
+        <option value="/">Featured</option>
+        <option value="/">Best Selling</option>
+        <option value="/">Alphabetically, A-Z</option>
+        <option value="/">Alphabetically, Z-A</option>
+        <option value="/">Price, low to high</option>
+        <option value="/">Price, high to low</option>
+      </select>
+    </div>
+  </div>
+</nav>
+
+<section class="products">
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p1.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Pink Love</h5>
+      <h6>$100.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p2.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Blue Vibes</h5>
+      <h6>$109.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p3.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Basketball</h5>
+      <h6>$199.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p4.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Watermellon</h5>
+      <h6>$99.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p5.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Pink Vibes</h5>
+      <h6>$990.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p6.jpg">
+    </div>
+    <div class="product-info">
+      <h5>You Go Girl</h5>
+      <h6>$919.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p7.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Pink Mood</h5>
+      <h6>$200.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p8.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Queen</h5>
+      <h6>$299.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p9.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Where</h5>
+      <h6>$399.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p10.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Vibes</h5>
+      <h6>$499.99</h6>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p13.jpg">
+    </div>
+    <div class="product-info">
+      <h5>You</h5>
+      <h6>$599.99</h6>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p12.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Candy</h5>
+      <h6>$699.99</h6>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image">
+      <img src="p11.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Neon Love</h5>
+      <h6>$4999.99</h6>
+    </div>
+  </div>
+</section>
+  </div>
+</div>
+
+
+<div class="footer">
+  <h2>Designed by Irina Balyan</h2>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+</body>
+</html>

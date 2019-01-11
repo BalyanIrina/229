@@ -1,0 +1,134 @@
+@charset "UTF-8";
+body {
+	width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	background-color: #FFFFEB;
+}
+ul {
+	padding: 0;
+	background-color: #E5FAED;
+	margin: 0;
+	list-style-type: none;
+}
+li {
+	float: right;
+	font-family: 'Josefin Sans', sans-serif;
+}
+li a {
+	display: block;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
+	color: #012363;
+	text-align: center;
+	text-decoration: none;
+}
+li a:hover {
+	color: #EE8F71;
+}
+h1 {
+	margin-left: 577px;
+	margin-right: auto;
+	padding-top: 102px;
+	color: #012363;
+	letter-spacing: 12px;
+	border-width: thick;
+	border-style: solid;
+	padding-bottom: 9px;
+	margin-top: -1150px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#text {
+	margin-top: 42px;
+	margin-left: 615px;
+}
+#rectangle {
+	margin-left: 463px;
+	margin-top: -81px;
+	padding-top: 0px;
+	padding-bottom: 103px;
+}
+h2 {
+	margin-top: -148px;
+	margin-left: 580px;
+	color: #012363;
+	font-size: 33px;
+	letter-spacing: 12px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+	width: 679px;
+	background-color: #FFC559;
+	height: 794px;
+	padding-top: 351px;
+}
+img {
+	margin-top: -161px;
+	margin-left: 73px;
+}
+body {
+}
+#resume {
+	padding-top: 73px;
+	margin-bottom: 370px;
+	margin-top: -381px;
+	margin-left: 371px;
+	border: thick solid #001757;
+	padding-bottom: 39px;
+	padding-left: 43px;
+	padding-right: 20px;
+}
+#r {
+	color: #FFFFEB;
+	font-family: 'Josefin Sans', sans-serif;
+	margin-top: -675px;
+	margin-left: 370px;
+	font-size: 30px;
+}
+#fb {
+	margin-bottom: 120px;
+	margin-left: -598px;
+	padding-top: 29px;
+	padding-bottom: 65px;
+	padding-left: 250px;
+	padding-right: 257px;
+}
+#insta {
+	margin-bottom: 138px;
+	margin-left: -10px;
+	padding-top: 18px;
+	padding-bottom: 47px;
+	padding-left: 0px;
+	padding-right: 20px;
+}
+.copyright {
+	height: 100px;
+	margin-top: 486px;
+	background-color: #012362;
+	padding-top: 0px;
+}
+h5 {
+	padding-top: 39px;
+	margin-left: 533px;
+	color: #ECECEC;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#twitter  {
+	margin-bottom: 149px;
+	margin-left: -675px;
+	padding-top: 5px;
+	padding-left: 899px;
+	padding-right: 277px;
+	border-bottom: 26px solid #FFC559;
+	border-right: 26px solid #FFC559;
+	padding-bottom: 10px;
+}
+#logo {
+	margin-top: -36px;
+	margin-bottom: -83px;
+	padding-bottom: 14px;
+	margin-left: -8px;
+}

@@ -1,0 +1,106 @@
+body {
+	width: 1280px;
+	padding-right: 122px;
+	padding-left: 122px;
+	padding-bottom: 122px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFEB;
+	margin-top: 15px;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	background-color: #E5FAED;
+	list-style-type: none;
+}
+li {
+	float: right;
+	font-family: 'Josefin Sans', sans-serif;
+}
+li a {
+	display: block;
+	padding-top: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 14px;
+	text-decoration: none;
+	color: #012241;
+	text-align: center;
+}
+li a:hover {
+	color: #F3BE5D;
+}
+img {
+	margin-top: 31px;
+	margin-bottom: 57px;
+}
+.copyright {
+	height: 100px;
+	background-color: #012362;
+	width: 1280px;
+	padding-top: 1px;
+	margin-top: 0px;
+	margin-bottom: -130px;
+}
+h5 {
+	padding-top: 39px;
+	margin-left: 566px;
+	color: #ECECEC;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#logo {
+	margin-top: -20px;
+}
+h2 {
+	margin-left: 48px;
+	padding-top: 96px;
+	padding-bottom: 20px;
+	width: 222px;
+	background-color: #E29277;
+	height: 99px;
+	padding-left: 124px;
+	padding-right: 0px;
+	margin-bottom: -124px;
+	margin-right: -13px;
+	-webkit-box-shadow: 16px 20px 86px 2px #825708;
+	box-shadow: 16px 20px 86px 2px #825708;
+	color: #FFFFEB;
+	font-family: 'Josefin Sans', sans-serif;
+}
+h3 {
+	margin-left: 465px;
+	margin-top: -215px;
+	padding-top: 70px;
+	margin-bottom: 95px;
+	font-size: 24px;
+	text-align: center;
+	padding-left: 1px;
+	background-color: #FFFFEB;
+	width: 345px;
+	height: 100px;
+	padding-bottom: 45px;
+	-webkit-box-shadow: 16px 20px 86px 2px #825708;
+	box-shadow: 16px 20px 86px 2px #825708;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #012362;
+}
+h4 {
+	font-size: 24px;
+	margin-left: 875px;
+	margin-top: -310px;
+	padding-top: 97px;
+	width: 207px;
+	background-color: #E29277;
+	padding-left: 140px;
+	padding-bottom: 90px;
+	-webkit-box-shadow: 16px 20px 86px 2px #825708;
+	box-shadow: 16px 20px 86px 2px #825708;
+	color: #FFFFEB;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+	background-color: #F3BE5D;
+	height: 287px;
+	padding-top: 25px;
+}

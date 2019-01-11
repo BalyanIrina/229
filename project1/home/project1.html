@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+  <title>Home</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+      /* Full height */
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+    .img1 {
+      background-image: url("1n.jpg");
+      opacity: 0.9;
+    }
+
+    .img2 {
+      background-image: url("1a.jpg");
+    }
+
+    .img3 {
+      background-image: url("2n.jpg");
+      opacity: 0.9;
+    }
+
+    .img4 {
+      background-image: url("a2.jpg");
+    }
+
+    .img5 {
+      background-image: url("3n.jpg");
+      opacity: 0.9;
+    }
+
+    .img6 {
+      background-image: url("a3.jpg");
+    }
+
+    /* Position text in the middle of the page/image */
+
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-weight: regular;
+      font-size: 80px;
+      border: 10px solid #f1f1f1;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 600px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.openbtn:hover {
+    background-color:#444;
+}
+  </style>
+</head>
+
+<body>
+    <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="bg-image img1"></div>
+  <div class="bg-image img2"></div>
+  <div class="bg-image img3"></div>
+  <div class="bg-image img4"></div>
+  <div class="bg-image img5"></div>
+  <div class="bg-image img6"></div>
+
+  <div class="bg-text">IRINA<b>BALYAN</b></div>
+
+
+
+
+  <button class="openbtn" onclick="openNav()">☰</button>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>

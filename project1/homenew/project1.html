@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <title>Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    nav a {font-size: 1.5em;}
+
+    .bg-image {
+      /* Full height */
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+    .img1 {
+      background-image: url("1n.jpg");
+
+    }
+
+    .img2 {
+      background-image: url("1a.jpg");
+    }
+
+    .img3 {
+      background-image: url("2n.jpg");
+
+    }
+
+    .img4 {
+      background-image: url("a2.jpg");
+    }
+
+    .img5 {
+      background-image: url("3n.jpg");
+
+    }
+
+    .img6 {
+      background-image: url("a3jpg.jpg");
+    }
+
+    /* Position text in the middle of the page/image */
+
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-weight: regular;
+      font-size: 80px;
+      border: 10px solid #f1f1f1;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 600px;
+      padding: 20px;
+      text-align: center;
+    }
+
+
+      @media screen and (max-width: 600px){
+        .bg-text {
+          font-size: 40px;
+          width: 350px;
+        }
+        .icon-bar {
+          left: 10px;
+          z-index: 4;
+        }
+}
+  </style>
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <input type="checkbox" id="navigation" />
+    <label for="navigation">
+    	<i class="fa fa-bars"></i>
+      </label>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Portfolio</a>
+        </li>
+        <li>
+          <a href="../about/About.html">About</a>
+        </li>
+        <li>
+          <a href="../contact/contact.html">Contact</a>
+        </li>
+        <li>
+          <a href= "../homenew/animation1.html">Animation</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="bg-image img1"></div>
+  <div class="bg-image img2"></div>
+  <div class="bg-image img3"></div>
+  <div class="bg-image img4"></div>
+  <div class="bg-image img5"></div>
+  <div class="bg-image img6"></div>
+
+  <div class="bg-text">IRINA<b>BALYAN</b></div>
+
+  <div class="icon-bar">
+  <a href="https://www.facebook.com/irina.balyan.5" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://www.instagram.com/unbreakable_balyan/" class="instagram"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="https://twitter.com/miss_balyan" class="twitter"><i class="fa fa-twitter"></i></a>
+
+</div>
+
+</html>
