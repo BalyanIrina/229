@@ -111,9 +111,7 @@
       margin-bottom: 16px;
       padding: 0 8px;
     }
-    .mainlogo {
-      margin-right: 22%;
-    }
+
     @media screen and (max-width: 650px) {
       .row,
       .row>.column {
@@ -279,7 +277,7 @@
     }
 
     .portfolio-lightbox__content {
-      width: 80%;
+      width: 50%;
       height: 80%;
       padding: 15px;
       position: relative;
@@ -452,40 +450,40 @@
 
     <div id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('batic')">Batic</button>
-      <button class="btn" onclick="filterSelection('painting')"> Painting</button>
+      <button class="btn" onclick="filterSelection('code')">Coding</button>
+      <button class="btn" onclick="filterSelection('graphic')"> Graphic Design</button>
       <button class="btn" onclick="filterSelection('illustration')"> Illustration</button>
     </div>
 
     <!-- Portfolio Gallery Grid -->
     <div class="row">
-      <div class="column batic">
+      <div class="column graphic">
         <div class="content">
-              <img src="im.jpg" alt="1" style="width:100%">
+              <img src="443.jpg" alt="1" style="width:100%">
               <div class="portfolio__desc">
-                <h4>Mountains</h4>
-                <p>Lorem ipsum dolor..</p>
+                <h4>Tri fold brochure</h4>
+                <p>Tri fold brochure for Solomon R. Guggenheim Museum about comming Frank Lloyd's "Organic architecture" exhibition. </p>
                 <p><a href="#portfolio-item-1"><button class="view">VIEW</button></a></p>
               </div>
         </div>
       </div>
-      <div class="column batic">
+      <div class="column code">
         <div class="content">
-          <img src="sharf.jpg" alt="2" style="width:100%">
+          <img src="webcode.jpg" alt="2" style="width:100%">
           <div class="portfolio__desc">
-          <h4>Lights</h4>
-          <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
+          <h4>First coding experience</h4>
+          <p>Everything in this link was coded in 2018 spring during class period, using Dreamweaver.</p>
+          <p><a href="https://balyanirina.github.io/229/Irina%20Balyan_173_homework/index.html"><button class="view">VIEW</button></a></p>
         </div>
         </div>
       </div>
-      <div class="column batic">
+      <div class="column graphic">
         <div class="content">
-          <img src="kiss.jpg" alt="3" style="width:100%">
+          <img src="poster.jpg" alt="3" style="width:100%">
           <div class="portfolio__desc">
-          <h4>Forest</h4>
-          <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
+          <h4>Concert Choir Poster</h4>
+          <p>Poster created for Lansing Community College student's Concert Choir held at Lansing Community College. </p>
+          <p><a href="#portfolio-item-2"><button class="view">VIEW</button></a></p>
         </div>
         </div>
       </div>
@@ -580,7 +578,7 @@
           <div class="portfolio__desc">
           <h4>Woman</h4>
           <p>Lorem ipsum dolor..</p>
-          <p><a href="#portfolio-item-2"><button class="view">VIEW</button></a></p>
+          <p><a href="#portfolio-item-"><button class="view">VIEW</button></a></p>
         </div>
         </div>
       </div>
@@ -624,115 +622,42 @@
       <div id="portfolio-item-1" class="portfolio-lightbox">
         <div class="portfolio-lightbox__content">
           <a href="#" class="btn--fechar"></a>
-
-
-
           <div class="container2">
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
             <div class="mySlides">
-              <div class="numbertext">1 / 6</div>
-              <img src="im.jpg" style="width:100%">
+              <div class="numbertext">1 / 1</div>
+              <img src="443.jpg" style="width:100%">
             </div>
-
-            <div class="mySlides">
-              <div class="numbertext">2 / 6</div>
-              <img src="1.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">3 / 6</div>
-              <img src="2.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">4 / 6</div>
-              <img src="4.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">5 / 6</div>
-              <img src="3.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">6 / 6</div>
-              <img src="5.jpg" style="width:100%">
-            </div>
-
-
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-
             <div class="row2">
-              <div class="column2">
-                <img class="demo cursor" src="im.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-              </div>
-              <div class="column2">
-                <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-              </div>
-              <div class="column2">
-                <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-              </div>
-              <div class="column2">
-                <img class="demo cursor" src="4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-              </div>
-              <div class="column2">
-                <img class="demo cursor" src="3.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-              </div>
-              <div class="column2">
-                <img class="demo cursor" src="5.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-              </div>
             </div>
           </div>
-
-
         </div>
       </div>
+
       <div id="portfolio-item-2" class="portfolio-lightbox">
         <div class="portfolio-lightbox__content">
           <a href="#" class="btn--fechar"></a>
-
-
-
           <div class="container2">
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
             <div class="mySlides">
-              <div class="numbertext">1 / 2</div>
-              <img src="ser.jpg" style="width:100%">
+              <div class="numbertext">1 / 1</div>
+              <img src="poster.jpg" style="width:100%">
             </div>
-
-            <div class="mySlides">
-              <div class="numbertext">2 / 2</div>
-              <img src="164.jpg" style="width:100%">
-            </div>
-
-
-
-
-            <a class="next" onclick="plusSlides(1)">❯</a>
 
             <div class="caption-container">
               <p id="caption"></p>
             </div>
 
             <div class="row2">
+
               <div class="column2">
-                <img class="demo cursor" src="ser.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-              </div>
-              <div class="column2">
-                <img class="demo cursor" src="164.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                <img class="demo cursor" src="poster.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
               </div>
 
 
             </div>
           </div>
-
-
         </div>
       </div>
+
       </div>
     <!-- END MAIN -->
   </div>
